@@ -20071,5 +20071,10 @@ textarea.form-control-lg {
 
 @modules _variables.sass;
 @modules _variables;
+body {
+  width: 100vw !important;
+  height: 100vh !important;
+  background-image: black !important;
+}
 
 /*# sourceMappingURL=app.css.map */
