@@ -9,8 +9,10 @@
 </head>
 
 <body class="bg-dark text-white">
-  <nav
-    class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed d-flex justify-content-between align-items-center">
+  
+  <header>
+    <nav
+    class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed  d-flex justify-content-around align-items-center w-100">
     <div>
       <a class="navbar-brand" href="#">CBIENBON</a>
     </div>
@@ -20,8 +22,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse w-100  " id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto w-100">
           <li class="nav-item active">
             <a class="nav-link" href="#">Home</a>
           </li>
@@ -50,8 +52,6 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BOOK A TABLE</button>
     </div>
   </nav>
-  <header>
-
     <h1>Welcome to CBIENBON</h1>
     <p>Delivering great food for more than 18 years</p>
     <div class="d-flex"><button>OUR MENU</button><button>BOOK A TABLE</button></div>
@@ -213,7 +213,7 @@
       <h2>Book a Table</h2>
     </div>
 
-    <form action="">
+    <form action=""class="formbuttons">
       <div class="d-flex"><input type="text" placeholder="Your Name"><input type="text" placeholder="Your Email"><input
           type="text" placeholder="Your Phone"></div>
       <div class="d-flex"><input type="text" placeholder="Date"><input type="text" placeholder="Time"><input type="text"
@@ -235,8 +235,9 @@
         <img src="public/img/gallery/gallery-1.jpg" alt=""><img src="public/img/gallery/gallery-2.jpg" alt=""><img
           src="public/img/gallery/gallery-3.jpg" alt=""><img src="public/img/gallery/gallery-4.jpg" alt="">
       </div>
-      <div class="d-flex"><img src="public/img/gallery/gallery-5.jpg" alt=""><img src="public/img/gallery/gallery-6.jpg" alt=""><img
-          src="public/img/gallery/gallery-7.jpg" alt=""><img src="public/img/gallery/gallery-8.jpg" alt=""></div>
+      <div class="d-flex"><img src="public/img/gallery/gallery-5.jpg" alt=""><img src="public/img/gallery/gallery-6.jpg"
+          alt=""><img src="public/img/gallery/gallery-7.jpg" alt=""><img src="public/img/gallery/gallery-8.jpg" alt="">
+      </div>
     </div>
   </section>
   <section id="Chefs">
@@ -248,10 +249,42 @@
       <h2>Our Proffesional Chefs</h2>
     </div>
     <div class="d-flex">
-      <img src="public/img/chefs/chefs-1.jpg" alt="chefs-1"><img src="public/img/chefs/chefs-2.jpg" alt="chefs-2"><img src="public/img/chefs/chefs-3.jpg" alt="chefs-3">
+      <img src="public/img/chefs/chefs-1.jpg" alt="chefs-1"><img src="public/img/chefs/chefs-2.jpg" alt="chefs-2"><img
+        src="public/img/chefs/chefs-3.jpg" alt="chefs-3">
     </div>
   </section>
-  <section id="contactUs"></section>
+  <section id="contactUs">
+    <div class=" sect-title">
+      <div class="d-flex gap-2">
+        <p>CONTACT</p><!-- I mean like seriously , WHY US ?   -->
+        <div>____________</div>
+      </div>
+      <h2>Contact Us</h2>
+    </div>
+    <div class="content">
+      <div>
+        <img src="" alt="Image place de la minoterie">
+      </div>
+      <div class="d-flex">
+        <div class="locations">
+          <div class="d-flex gap-2 ms-2">icon <div class="primary"><h2>Location:</h2><p>Lorem ipsum dolor sit amet.</p></div></div>
+          <div class="d-flex gap-2 ms-2">icon <div><h2>Open Hours:</h2><p>Monday-Saturday:</p><p>
+            11:00 AM - 23:00PM
+          </p></div></div>
+          <div class="d-flex gap-2 ms-2">icon <div><h2>Location:</h2><p>info@example.com</p></div></div>
+          <div class="d-flex gap-2 ms-2">icon <div><h2>Location:</h2><p>+1 5589 55488 55s</p></div></div>
+        </div>
+        <div class="inputs ">
+          <form class="formbuttons d-flex flex-column" action="">
+            <div><input type="text" placeholder="Your Name"><input type="text" placeholder="Your Email"></div>
+            <div><input type="text" placeholder="subject"></div>
+            <div><input type="Message" placeholder="Message"></div>
+          </form>
+          <button>Send Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
