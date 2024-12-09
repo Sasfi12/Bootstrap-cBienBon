@@ -85,7 +85,7 @@
     </div>
     <img src="public/img/about-bg.jpg" alt="">
   </section>
-  <section class="whyUs">
+  <section id="whyUs" class="d-flex flex-column">
     <div>
       <div class="d-flex gap-2">
         <p>WHY US</p><!-- I mean like seriously , WHY US ?   -->
@@ -93,23 +93,45 @@
       </div>
       <h2>Why Choose Our Restaurant</h2>
     </div>
-    <div>
-      <div>
+    <div class="d-flex justify-content-between gap-3 p-5 ">
+      <div class="border">
         <h2>01</h2>
         <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat recusandae iusto soluta, quisquam maxime libero?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat recusandae iusto soluta, quisquam maxime
+          libero?</p>
       </div>
-      <div>
+      <div class="border">
         <h2>02</h2>
         <h2>Repellat Nihil</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, omnis sequi quisquam vel fugit sed facere doloribus?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, omnis sequi quisquam vel fugit sed facere
+          doloribus?</p>
       </div>
-      <div>
+      <div class="border">
         <h2>03</h2>
         <h2>Ad ad velit qui</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dignissimos obcaecati deserunt iusto tempore!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dignissimos obcaecati deserunt iusto tempore!
+        </p>
       </div>
     </div>
+  </section>
+  <section id="menu">
+    <div>
+      <div class="d-flex gap-2">
+        <p>MENU</p><!-- I mean like seriously , WHY US ?   -->
+        <div>____________</div>
+      </div>
+      <h2>Check Our Tasty Menu</h2>
+    </div>
+    <div>
+      <div class="d-flex gap-2 justify-content-center">
+        <span><a class="text-decoration-none text-white" href="">All</a></span>
+        <span><a class="text-decoration-none text-white" href="">Starters</a></span>
+        <span><a class="text-decoration-none text-white" href="">Salads </a></span>
+        <span><a class="text-decoration-none text-white" href="">Speciality </a></span>
+      </div>
+      <div><img src="public/img/specials-1.png" alt="specials-1"></div>
+    </div>
+
   </section>
   <script src="node_modules/bootstrap/js/src/carousel.js"></script>
 </body>
