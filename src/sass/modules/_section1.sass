@@ -3,25 +3,30 @@
     img
         opacity: 0.15
     .voluptatem-content
-        position: absolute
         z-index: 0
-        transition: 5s
         .img-container
-            position
+            position: relative
+            transition: 1s
             .upper-corner
+                transition: 2s
                 padding: 2rem 
-                border-left: 1rem solid
-                border-top: 1rem solid 
-                position: relative 
-                top: 6rem
-                left: 1rem  
+                border-left: 0.5rem solid
+                border-top: 0.5rem solid 
+                width: 2rem
+                position: absolute 
+                top: 1.5rem
+                left: 1rem 
+                border-color: #CCA855
             .lower-corner
+                transition: 2s
                 padding: 2rem
-                border-right: 1rem solid 
-                border-bottom: 1rem solid
-                position: relative
-                bottom: 6rem
-                right: 1rem
+                border-right: 0.5rem solid  
+                border-bottom: 0.5rem solid
+                width: 2rem
+                position: absolute
+                bottom: 1.5rem
+                left: 34rem
+                border-color: #CCA855
             img 
                 border: gray solid 
                 opacity: 1
@@ -30,3 +35,9 @@
                 object-fit: cover
                 // to revisit later, never is not acceptable. 
 
+        .img-container:active 
+        .img-container:hover 
+            .lower-corner
+                transform: translate(-20px , -20px)
+            .upper-corner
+                transform: translate(20px , 20px)
