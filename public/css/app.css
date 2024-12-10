@@ -20178,6 +20178,27 @@ header .welcome-message {
   padding: 4rem 2rem 4rem 2rem;
 }
 
+#Events .event-bg {
+  z-index: -10;
+  position: relative;
+  object-fit: cover;
+  opacity: 0.1;
+}
+#Events .sect-title {
+  z-index: 1;
+  position: absolute;
+  bottom: 65rem;
+}
+#Events .carousel-item {
+  position: absolute;
+  top: 20rem;
+  overflow: hidden;
+}
+#Events .carousel-item img {
+  width: 60rem;
+  height: 50rem;
+}
+
 footer .lower-footer {
   background-color: black;
 }
