@@ -20071,11 +20071,6 @@ textarea.form-control-lg {
 
 @module _variables;
 @module _mixins;
-html {
-  height: 100vh;
-  width: 100vw;
-}
-
 * {
   margin: 0;
 }
@@ -20088,9 +20083,11 @@ body {
 
 nav {
   opacity: 0.8;
+  z-index: 1;
 }
 
 header {
+  margin: 0 auto;
   width: 100;
 }
 header img {
@@ -20114,23 +20111,40 @@ header .welcome-message {
 #voluptatem .voluptatem-content {
   position: absolute;
   z-index: 0;
+  transition: 5s;
 }
-#voluptatem .voluptatem-content .upper-corner {
+#voluptatem .voluptatem-content .img-container .upper-corner {
   padding: 2rem;
-  border-left: 2rem solid;
-  border-top: 2rem solid;
-  position: absolute;
+  border-left: 1rem solid;
+  border-top: 1rem solid;
+  position: relative;
+  top: 6rem;
+  left: 1rem;
 }
-#voluptatem .voluptatem-content .lower-corner {
+#voluptatem .voluptatem-content .img-container .lower-corner {
   padding: 2rem;
-  border-right: 2rem solid;
-  border-bottom: 2rem solid;
-  position: absolute;
+  border-right: 1rem solid;
+  border-bottom: 1rem solid;
+  position: relative;
+  bottom: 6rem;
+  right: 1rem;
 }
-#voluptatem .voluptatem-content img {
+#voluptatem .voluptatem-content .img-container img {
+  border: gray solid;
   opacity: 1;
-  width: 30rem;
+  width: 40rem;
   height: 30rem;
+  object-fit: cover;
+}
+
+#whyUs img {
+  opacity: 0.01;
+}
+#whyUs .contents {
+  justify-content: center;
+}
+#whyUs .contents .border {
+  padding: 4rem 2rem 4rem 2rem;
 }
 
 footer .lower-footer {
