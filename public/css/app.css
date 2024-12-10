@@ -20120,8 +20120,8 @@ header .welcome-message {
   transition: 0.5s;
   padding: 2rem;
   z-index: 2;
-  border-left: 0.5rem solid;
-  border-top: 0.5rem solid;
+  border-left: 0.3rem solid;
+  border-top: 0.3rem solid;
   width: 2rem;
   position: absolute;
   top: 1.5rem;
@@ -20132,8 +20132,8 @@ header .welcome-message {
   transition: 0.5s;
   padding: 2rem;
   z-index: 2;
-  border-right: 0.5rem solid;
-  border-bottom: 0.5rem solid;
+  border-right: 0.3rem solid;
+  border-bottom: 0.3rem solid;
   width: 2rem;
   position: absolute;
   bottom: 1.5rem;
@@ -20152,7 +20152,7 @@ header .welcome-message {
   transform: scale(1.05, 1.05);
 }
 #voluptatem .voluptatem-content .img-container:hover .lower-corner {
-  transform: translate(25px, 20px);
+  transform: translate(27px, 20px);
 }
 #voluptatem .voluptatem-content .img-container:hover .upper-corner {
   transform: translate(-25px, -20px);
