@@ -20090,15 +20090,24 @@ nav {
   opacity: 0.8;
 }
 
+header {
+  width: 100;
+}
 header img {
   z-index: -1;
-  position: absolute;
+  position: relative;
+  object-fit: cover;
 }
 header .welcome-message {
-  position: relative;
-  bottom: 500px;
-  left: 200px;
+  position: absolute;
+  bottom: 20rem;
+  left: 15rem;
   z-index: 1;
+}
+
+#voluptatem {
+  z-index: -1;
+  z-index-position: absolute;
 }
 
 footer .lower-footer {
