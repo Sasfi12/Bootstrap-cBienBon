@@ -20107,7 +20107,30 @@ header .welcome-message {
 
 #voluptatem {
   z-index: -1;
-  z-index-position: absolute;
+}
+#voluptatem img {
+  opacity: 0.15;
+}
+#voluptatem .voluptatem-content {
+  position: absolute;
+  z-index: 0;
+}
+#voluptatem .voluptatem-content .upper-corner {
+  padding: 2rem;
+  border-left: 2rem solid;
+  border-top: 2rem solid;
+  position: absolute;
+}
+#voluptatem .voluptatem-content .lower-corner {
+  padding: 2rem;
+  border-right: 2rem solid;
+  border-bottom: 2rem solid;
+  position: absolute;
+}
+#voluptatem .voluptatem-content img {
+  opacity: 1;
+  width: 30rem;
+  height: 30rem;
 }
 
 footer .lower-footer {
