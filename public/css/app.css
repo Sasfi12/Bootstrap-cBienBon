@@ -20109,6 +20109,7 @@ header .welcome-message {
   opacity: 0.15;
 }
 #voluptatem .voluptatem-content {
+  position: absolute;
   z-index: 0;
 }
 #voluptatem .voluptatem-content .img-container {
@@ -20116,19 +20117,21 @@ header .welcome-message {
   transition: 1s;
 }
 #voluptatem .voluptatem-content .img-container .upper-corner {
-  transition: 2s;
+  transition: 0.5s;
   padding: 2rem;
+  z-index: 2;
   border-left: 0.5rem solid;
   border-top: 0.5rem solid;
   width: 2rem;
   position: absolute;
   top: 1.5rem;
-  left: 1rem;
+  left: 1.5rem;
   border-color: #CCA855;
 }
 #voluptatem .voluptatem-content .img-container .lower-corner {
-  transition: 2s;
+  transition: 0.5s;
   padding: 2rem;
+  z-index: 2;
   border-right: 0.5rem solid;
   border-bottom: 0.5rem solid;
   width: 2rem;
@@ -20138,17 +20141,21 @@ header .welcome-message {
   border-color: #CCA855;
 }
 #voluptatem .voluptatem-content .img-container img {
+  transition: 0.5s;
   border: gray solid;
   opacity: 1;
   width: 40rem;
   height: 30rem;
   object-fit: cover;
 }
+#voluptatem .voluptatem-content .img-container:hover img {
+  transform: scale(1.05, 1.05);
+}
 #voluptatem .voluptatem-content .img-container:hover .lower-corner {
-  transform: translate(-20px, -20px);
+  transform: translate(25px, 20px);
 }
 #voluptatem .voluptatem-content .img-container:hover .upper-corner {
-  transform: translate(20px, 20px);
+  transform: translate(-25px, -20px);
 }
 
 #whyUs img {
