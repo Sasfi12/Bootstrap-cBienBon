@@ -20102,10 +20102,17 @@ header img {
   object-fit: cover;
 }
 header .welcome-message {
-  position: absolute;
-  bottom: 20rem;
-  left: 15rem;
   z-index: 1;
+}
+header .welcome-message h1, header .welcome-message .h1 {
+  font-size: 1.2em;
+}
+header .welcome-message h1 b, header .welcome-message .h1 b {
+  font-weight: bolder;
+}
+header .welcome-message p {
+  font-size: 0.5em;
+  font-weight: bolder;
 }
 
 #voluptatem {
@@ -20187,12 +20194,11 @@ header .welcome-message {
 #Events .sect-title {
   z-index: 1;
   position: absolute;
-  bottom: 65rem;
+  bottom: 60rem;
 }
 #Events .carousel-item {
   position: absolute;
   top: 20rem;
-  overflow: hidden;
 }
 #Events .carousel-item img {
   width: 60rem;
@@ -20200,8 +20206,11 @@ header .welcome-message {
 }
 
 #Gallery img {
-  height: 29rem;
+  height: 25rem;
   width: 29rem;
+  border: solid 3px #464337;
+  border-top: none;
+  border-left: none;
 }
 
 footer .lower-footer {

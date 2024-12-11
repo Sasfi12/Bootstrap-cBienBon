@@ -23,25 +23,25 @@
       <div class="collapse navbar-collapse w-100  " id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto w-100">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link text-primary" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link text-white " href="#voluptatem">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link text-white" href="#Menu">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Events</a>
+            <a class="nav-link text-white" href="#Events">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
+            <a class="nav-link text-white" href="#Gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Chefs</a>
+            <a class="nav-link text-white" href="#Chefs">Chefs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacts</a>
+            <a class="nav-link text-white" href="#contactUs">Contacts</a>
           </li>
         </ul>
       </div>
@@ -51,14 +51,25 @@
     </div>
 
   </nav>
-  <header class="p-0 ">
+  <header class="p-0 position-relative">
     <img src="public/img/hero-bg.jpg " class="w-100 h-100 opacity-50 position-relative bottom-50 img-fluid"
       alt="hero-bg">
 
-    <div class="welcome-message ">
-      <h1>Welcome to CBIENBON</h1>
+    <div class="welcome-message display-4 position-absolute bottom-50 ps-5 w-75">
+      <div>
+      <h1>Welcome to <b class="text-primary">CBIENBON</b></h1>
       <p>Delivering great food for more than 18 years</p>
-      <div class="d-flex"><button>OUR MENU</button><button>BOOK A TABLE</button></div>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div><button>OUR MENU</button><button>BOOK A TABLE</button></div>
+        <button class="round-button">
+            <div class="outer">
+              <div>
+
+              </div>
+            </div>
+        </button>
+      </div>
     </div>
   </header>
   <section id="voluptatem" class="d-flex flex-column justify-content-center w-100 ">
@@ -130,12 +141,27 @@
       <h2>Check Our Tasty Menu</h2>
     </div>
     <div>
-      <div class="d-flex gap-2 justify-content-center">
-        <span><a class="text-decoration-none text-white" href="">All</a></span>
-        <span><a class="text-decoration-none text-white" href="">Starters</a></span>
-        <span><a class="text-decoration-none text-white" href="">Salads </a></span>
-        <span><a class="text-decoration-none text-white" href="">Speciality </a></span>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-" aria-selected="true">All</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-starters" aria-selected="false">Starters</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-salad" aria-selected="false">Salad</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-speciality" aria-selected="false" disabled>Speciality</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
       </div>
+      
       <div class="d-flex align-items-center "><img src="public/img/specials-1.png" alt="specials-1" class="">
         <div>
           <p>Lorem, ipsum</p>
@@ -154,26 +180,61 @@
       </div>
       <h2>Organize Your Events In Our Restaurant</h2>
     </div>
-      <div class="d-flex ">
-        <div class="carousel-item d-flex flex-row bg-opacity-10">
-          <img src="public/img/event-custom.jpg" alt="">
+    <div class="d-flex ">
+      <div class="carousel-item d-flex flex-row bg-opacity-10">
+        <img src="public/img/event-birthday.jpg" alt="">
+        <div>
+          <h3>Custom Parties </h3>
+          <span>$99</span>
+          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quia in et consequuntur reprehenderit
+              dolorum rerum? Assumenda dolore voluptates maxime adipisci.</i></p>
           <div>
-            <h3>Custom Parties </h3>
-            <span>$99</span>
-            <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quia in et consequuntur reprehenderit
-                dolorum rerum? Assumenda dolore voluptates maxime adipisci.</i></p>
-            <div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, suscipit.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, culpa.</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, doloribus!</p>
-            </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus velit, sunt suscipit assumenda,
-              laboriosam pariatur rerum ipsam accusantium eius sequi quia enim deleniti fuga dolores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, suscipit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, culpa.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, doloribus!</p>
           </div>
-       
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus velit, sunt suscipit assumenda,
+            laboriosam pariatur rerum ipsam accusantium eius sequi quia enim deleniti fuga dolores.</p>
         </div>
+
+      </div>
+      <div class="carousel-item d-flex flex-row bg-opacity-10">
+        <img src="public/img/event-private.jpg" alt="">
+        <div>
+          <h3>Custom Parties </h3>
+          <span>$99</span>
+          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quia in et consequuntur reprehenderit
+              dolorum rerum? Assumenda dolore voluptates maxime adipisci.</i></p>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, suscipit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, culpa.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, doloribus!</p>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus velit, sunt suscipit assumenda,
+            laboriosam pariatur rerum ipsam accusantium eius sequi quia enim deleniti fuga dolores.</p>
         </div>
-<!-- Review upper parts positionning before going further.  -->
+
+      </div>
+      <div class="carousel-item d-flex flex-row bg-opacity-10">
+        <img src="public/img/event-custom.jpg" class="img-fluid" alt="">
+        <div>
+          <h3>Custom Parties </h3>
+          <span>$99</span>
+          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quia in et consequuntur reprehenderit
+              dolorum rerum? Assumenda dolore voluptates maxime adipisci.</i></p>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, suscipit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, culpa.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, doloribus!</p>
+          </div>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus velit, sunt suscipit assumenda,
+            laboriosam pariatur rerum ipsam accusantium eius sequi quia enim deleniti fuga dolores.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Review upper parts positionning before going further.  -->
   </section>
   <section id="Reservations">
     <div class=" sect-title">
@@ -200,7 +261,7 @@
           <textarea name="" id="" placeholder="Message"></textarea>
         </div>
       </div>
-    <button>Book a Table</button>
+      <button>Book a Table</button>
   </section>
   <section id="Gallery">
     <div class=" sect-title">
@@ -210,13 +271,17 @@
       </div>
       <h2>Some photos from our Restaurant </h2>
     </div>
-    <div class=" ms-3 me-3 justify-content-center align-items-center">
+    <div class=" ms-2 me-2 justify-content-center align-items-center ">
       <div class="d-flex justify-content-center align-items-center">
-        <img src="public/img/gallery/gallery-1.jpg" alt=""><img src="public/img/gallery/gallery-2.jpg" alt=""><img
-          src="public/img/gallery/gallery-3.jpg" alt=""><img src="public/img/gallery/gallery-4.jpg" alt="">
+        <img src="public/img/gallery/gallery-1.jpg" alt="tables" class="img-fluid"><img
+          src="public/img/gallery/gallery-2.jpg " class="img-fluid" alt="another-table"><img
+          src="public/img/gallery/gallery-3.jpg" class="img-fluid" alt="tables-with-glasses"><img
+          src="public/img/gallery/gallery-4.jpg" class="img-fluid" alt="tables-again">
       </div>
-      <div class="d-flex justify-content-center align-items-center"><img src="public/img/gallery/gallery-5.jpg" alt=""><img src="public/img/gallery/gallery-6.jpg"
-          alt=""><img src="public/img/gallery/gallery-7.jpg" alt=""><img src="public/img/gallery/gallery-8.jpg" alt="">
+      <div class="d-flex justify-content-center align-items-center"><img src="public/img/gallery/gallery-5.jpg "
+          class="img-fluid" alt="image"><img class="img-fluid" src="public/img/gallery/gallery-6.jpg" alt="image"><img
+          class="img-fluid" src="public/img/gallery/gallery-7.jpg" alt="image"><img class="img-fluid"
+          src="public/img/gallery/gallery-8.jpg" alt="image">
       </div>
     </div>
   </section>
@@ -228,9 +293,16 @@
       </div>
       <h2>Our Proffesional Chefs</h2>
     </div>
-    <div class="d-flex">
-      <img src="public/img/chefs/chefs-1.jpg" alt="chefs-1"><img src="public/img/chefs/chefs-2.jpg" alt="chefs-2"><img
-        src="public/img/chefs/chefs-3.jpg" alt="chefs-3">
+    <div class="d-flex justify-content-around">
+      <div>
+        <img src="public/img/chefs/chefs-1.jpg" alt="chefs-1">
+      </div>
+      <div>
+        <img src="public/img/chefs/chefs-2.jpg" alt="chefs-2">
+      </div>
+      <div>
+        <img src="public/img/chefs/chefs-3.jpg" alt="chefs-3">
+      </div>
     </div>
   </section>
   <section id="contactUs">
@@ -243,11 +315,7 @@
     </div>
     <div class="content">
       <div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18906.129712753736!2d6.722624160288201!3d60.12672284414915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463e997b1b6fc09d%3A0x6ee05405ec78a692!2sJ%C4%99zyk%20trola!5e0!3m2!1spl!2spl!4v1672239918130!5m2!1spl!2spl"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.6877163719555!2d4.338787276002477!3d50.85546687167241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38e84af80dd%3A0xe85cd9cd0218a4aa!2sPl.%20de%20la%20Minoterie%2010%2C%201080%20Molenbeek-Saint-Jean!5e0!3m2!1sen!2sbe!4v1733908676994!5m2!1sen!2sbe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="d-flex">
         <div class="locations">
@@ -276,7 +344,7 @@
           </div>
         </div>
         <div class="inputs ">
-          
+
           <button>Send Message</button>
         </div>
       </div>
@@ -327,13 +395,16 @@
         </div>
       </div>
     </div>
-    <div class="lower-footer justify-content-center d-flex">
+    <div class="lower-footer justify-content-center d-flex p-5">
       <p>© Copyright <b>CBIENBON.</b> All Rights Reserved</p>
-      <a href="">
-        <div class="">test</div>
+      <a href="#">
+        s
       </a>
     </div>
   </footer>
+  <script src="node_modules/bootstrap/js/dist/tab.js"></script>
+  <script src="node_modules/bootstrap/js/dist/base-component.js"></script>
+  <script src="node_modules/bootstrap/js/dist/carousel.js"></script>
 </body>
 
 </html>
