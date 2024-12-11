@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="public/css/app.css">
 </head>
 
-<body class="bg-dark text-white w-100 h-100">
+<body class=" text-white w-100 h-100">
   <!-- Find a way to change colors -->
   <nav
     class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed  d-flex justify-content-around align-items-center w-100 ps-5 pe-5">
@@ -62,18 +62,20 @@
         <p>Delivering great food for more than 18 years</p>
       </div>
       <div class="d-flex justify-content-between">
-        <div class="below-text-buttons"><button class="ps-4 pt-2 pb-2 pe-4">OUR MENU</button><button class="ps-4 pt-2 pb-2 pe-4">BOOK A TABLE</button></div>
+        <div class="below-text-buttons w-75"><button class="ps-4 pt-2 pb-2 pe-4">OUR MENU</button><button class="ps-4 pt-2 pb-2 pe-4">BOOK A TABLE</button></div>
         
-        
-        <!------ Include the above in your HEAD tag ---------->
+
         
         <div class="container">
           <div class="row">
-             <a id="play-video" class="video-play-button" href="https://www.youtube.com/watch?v=-U0kKC4bGdY"> <span></span></a>
+             <a id="play-video" class="video-play-button" href=""> <span></span></a>
           </div>
         </div>
 
       </div>
+      <button type="button" class="btn btn-primary video-btn" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-bs-target="#myModal">
+        Play Video 1 - autoplay
+      </button>
     </div>
   </header>
   <section id="voluptatem" class="d-flex flex-column justify-content-center w-100 ">
@@ -117,19 +119,19 @@
     </div>
     <div class=" contents d-flex gap-3 p-5 ">
       <div class="border">
-        <h2 class="text-primary">01</h2>
+        <h2 class="">01</h2>
         <h2>Lorem Ipsum</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat recusandae iusto soluta, quisquam maxime
           libero?</p>
       </div>
       <div class="border">
-        <h2 class="text-primary">02</h2>
+        <h2 class="">02</h2>
         <h2>Repellat Nihil</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, omnis sequi quisquam vel fugit sed facere
           doloribus?</p>
       </div>
       <div class="border">
-        <h2 class="text-primary">03</h2>
+        <h2 class="">03</h2>
         <h2>Ad ad velit qui</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dignissimos obcaecati deserunt iusto tempore!
         </p>
@@ -139,7 +141,7 @@
   <section id="Menu">
     <div class=" sect-title">
       <div class="d-flex gap-2">
-        <p>MENU</p><!-- I mean like seriously , WHY US ?   -->
+        <p>MENU</p>
         <div>____________</div>
       </div>
       <h2>Check Our Tasty Menu</h2>
@@ -258,20 +260,20 @@
       <h2>Book a Table</h2>
     </div>
 
-    <form>
-      <div class="form-row ">
-        <div class="form-group d-flex flex-row">
+    <form class="w-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="form-row d-flex flex-column gap-4 w-75 justify-content-center">
+        <div class="form-group d-flex flex-row justify-content-between">
           <input type="text" class="form-control" id="input" placeholder="Your Name">
           <input type="text" class="form-control" id="inputEmail4" placeholder="Your Email">
           <input type="text" class="form-control" id="input" placeholder="Your Phone">
         </div>
-        <div class="form-group d-flex flex-row">
+        <div class="form-group d-flex flex-row justify-content-between">
           <input type="text" class="form-control" id="input" placeholder="Date">
           <input type="text" class="form-control" id="inputEmail4" placeholder="Time">
           <input type="text" class="form-control" id="input" placeholder="# of people">
         </div>
-        <div>
-          <textarea name="" id="" placeholder="Message"></textarea>
+        <div class="form-group d-flex flex-row justify-content-center w-100"> 
+          <textarea name="message" id="messageInputOne" placeholder="Message" class="w-100"></textarea>
         </div>
       </div>
       <button>Book a Table</button>
