@@ -20089,6 +20089,9 @@ nav .collapse {
   padding: 1rem;
   color: white !important;
 }
+nav .collapse ul li a {
+  color: red;
+}
 
 header {
   margin: 0 auto;
