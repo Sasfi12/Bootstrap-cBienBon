@@ -11,7 +11,7 @@
 <body class="bg-dark text-white w-100 h-100">
   <!-- Find a way to change colors -->
   <nav
-    class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed  d-flex justify-content-around align-items-center w-100">
+    class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed  d-flex justify-content-around align-items-center w-100 ps-5 pe-5">
     <div>
       <a class="navbar-brand" href="#">CBIENBON</a>
     </div>
@@ -27,28 +27,28 @@
             <a class="nav-link text-primary" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white " href="#voluptatem">About</a>
+            <a class="nav-link" href="#voluptatem">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#Menu">Menu</a>
+            <a class="nav-link " href="#Menu">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#Events">Events</a>
+            <a class="nav-link" href="#Events">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#Gallery">Gallery</a>
+            <a class="nav-link" href="#Gallery">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#Chefs">Chefs</a>
+            <a class="nav-link" href="#Chefs">Chefs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#contactUs">Contacts</a>
+            <a class="nav-link" href="#contactUs">Contacts</a>
           </li>
         </ul>
       </div>
     </div>
     <div>
-      <button class="btn btn-outline-primary my-2 my-sm-0 text-white" type="submit">BOOK A TABLE</button>
+      <button class="btn btn-outline-primary my-2 my-sm-0 text-white rounded-pill ps-4 pt-2 pb-2 pe-4" type="submit">BOOK A TABLE</button>
     </div>
 
   </nav>
@@ -62,14 +62,17 @@
         <p>Delivering great food for more than 18 years</p>
       </div>
       <div class="d-flex justify-content-between">
-        <div class="below-text-buttons"><button>OUR MENU</button><button>BOOK A TABLE</button></div>
-        <button class="video-play-button">
-          <div class="outer-button">
-            <div class="inner-button">
-
-            </div>
+        <div class="below-text-buttons"><button class="ps-4 pt-2 pb-2 pe-4">OUR MENU</button><button class="ps-4 pt-2 pb-2 pe-4">BOOK A TABLE</button></div>
+        
+        
+        <!------ Include the above in your HEAD tag ---------->
+        
+        <div class="container">
+          <div class="row">
+             <a id="play-video" class="video-play-button" href="https://www.youtube.com/watch?v=-U0kKC4bGdY"> <span></span></a>
           </div>
-        </button>
+        </div>
+
       </div>
     </div>
   </header>
@@ -96,7 +99,7 @@
           </p>
         </div>
       </div>
-      <div class="img-container ">
+      <div class="img-container  ">
         <div class="upper-corner"></div>
 
         <img src="public/img/about.jpg" alt="" class="">
@@ -114,19 +117,19 @@
     </div>
     <div class=" contents d-flex gap-3 p-5 ">
       <div class="border">
-        <h2>01</h2>
+        <h2 class="text-primary">01</h2>
         <h2>Lorem Ipsum</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat recusandae iusto soluta, quisquam maxime
           libero?</p>
       </div>
       <div class="border">
-        <h2>02</h2>
+        <h2 class="text-primary">02</h2>
         <h2>Repellat Nihil</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, omnis sequi quisquam vel fugit sed facere
           doloribus?</p>
       </div>
       <div class="border">
-        <h2>03</h2>
+        <h2 class="text-primary">03</h2>
         <h2>Ad ad velit qui</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dignissimos obcaecati deserunt iusto tempore!
         </p>
@@ -162,22 +165,23 @@
       </ul>
       <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-          tabindex="0">...</div>
+          tabindex="0">
+          <div class="d-flex justify-content-center "><img src="public/img/specials-1.png" alt="specials-1" class="">
+            
+        </div></div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-          ...</div>
+          <div  >
+            <p>Lorem, ipsum</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div></div>
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-          ...</div>
+          ...zrg erg e</div>
         <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
-          tabindex="0">...</div>
+          tabindex="0">.. gae g er ea .</div>
       </div>
 
-      <div class="d-flex align-items-center "><img src="public/img/specials-1.png" alt="specials-1" class="">
-        <div>
-          <p>Lorem, ipsum</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-      </div>
-    </div>
+      
 
   </section>
   <section id="Events" class="position-relative">
@@ -414,9 +418,7 @@
       </a>
     </div>
   </footer>
-  <script src="node_modules/bootstrap/js/dist/tab.js"></script>
-  <script src="node_modules/bootstrap/js/dist/base-component.js"></script>
-  <script src="node_modules/bootstrap/js/dist/carousel.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 
 </html>

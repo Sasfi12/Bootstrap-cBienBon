@@ -20084,11 +20084,25 @@ body {
 
 nav {
   opacity: 0.8;
-  z-index: 1;
+  z-index: 10;
+}
+nav div:first-of-type > a {
+  font-size: 2.5rem;
 }
 nav .collapse {
   padding: 1rem;
   color: white !important;
+}
+nav .collapse > ul {
+  gap: 2rem;
+}
+nav .collapse > ul > li > a {
+  font-size: 1.4rem;
+  color: white;
+  transition: 0.5;
+}
+nav .collapse > ul > li > a:hover {
+  color: #CCA855;
 }
 
 header {
@@ -20221,6 +20235,11 @@ header .welcome-message .below-text-buttons button:hover {
 #Events .carousel-item img {
   width: 60rem;
   height: 50rem;
+}
+
+#Menu div > .tab-content img {
+  width: 5rem;
+  height: 5rem;
 }
 
 #Gallery img {
