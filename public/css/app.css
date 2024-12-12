@@ -20098,7 +20098,7 @@ nav .collapse {
   color: white !important;
 }
 nav .collapse > ul {
-  gap: 1rem;
+  gap: 0.5rem;
 }
 nav .collapse > ul > li > a {
   font-size: 1.2rem;
@@ -20232,6 +20232,7 @@ header .welcome-message .below-text-buttons button:hover {
 #voluptatem .voluptatem-content .img-container {
   position: relative;
   transition: 1s;
+  overflow: hidden;
 }
 #voluptatem .voluptatem-content .img-container .upper-corner {
   transition: 0.5s;
