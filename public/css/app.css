@@ -20338,6 +20338,11 @@ header .welcome-message .below-text-buttons button:hover {
 #Events li > div:hover {
   cursor: pointer;
 }
+#Events carousel-indicators > button {
+  display: none;
+  background: none;
+  border: none;
+}
 
 #Menu div > .tab-content img {
   width: 5rem;
@@ -20368,6 +20373,24 @@ header .welcome-message .below-text-buttons button:hover {
   border: solid 3px #464337;
   border-top: none;
   border-left: none;
+}
+
+#contactUs div > div > input {
+  height: 2rem;
+  background: none;
+  color: white;
+  border-radius: 0;
+}
+#contactUs div:first-child > div:nth-child(3) {
+  height: 6rem;
+}
+#contactUs ::placeholder {
+  color: #a09b86;
+}
+#contactUs .message-input {
+  height: 10vh;
+  background: none;
+  color: white;
 }
 
 footer .lower-footer {
