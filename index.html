@@ -81,12 +81,15 @@
   <section id="voluptatem" class="d-flex flex-column justify-content-center w-100 ">
     <img src="public/img/about-bg.jpg" class="img-fluid" alt="about-bg">
     <div class=" voluptatem-content d-flex flex-row ms-5 me-5 gap-5">
-      <div class="">
+      <div class="text-xl-start">
         <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
         <p><i><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab dolor hic fugiat nisi ut itaque est minus
               recusandae tempore ea!</b></i></p>
         <div class="okays">
+          <div>
+            <i class="bi bi-check-circle"></i>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum?</p>
+        </div>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic.</p>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quibusdam, ad quidem ab quae hic
             aliquid corporis tempora ipsam expedita libero voluptates laboriosam, molestias natus.</p>
@@ -101,10 +104,11 @@
           </p>
         </div>
       </div>
-      <div class="img-container  ">
+      <!-- Find a way to make image go smaller as the rest goes.  -->
+      <div class="img-container card-img card-img-overlay">
         <div class="upper-corner"></div>
 
-        <img src="public/img/about.jpg" alt="" class="">
+        <img src="public/img/about.jpg" alt="" class="img-fluid ">
         <div class="lower-corner"></div>
       </div>
     </div>
@@ -195,45 +199,11 @@
       </div>
       <h2>Organize Your Events In Our Restaurant</h2>
     </div>
-    <div class="d-flex ">
-      <div class="carousel-item d-flex flex-row bg-opacity-10">
-        <img src="public/img/event-birthday.jpg" alt="">
-        <div>
-          <h3>Custom Parties </h3>
-          <span>$99</span>
-          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quia in et consequuntur reprehenderit
-              dolorum rerum? Assumenda dolore voluptates maxime adipisci.</i></p>
-          <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, suscipit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, culpa.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, doloribus!</p>
-          </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus velit, sunt suscipit assumenda,
-            laboriosam pariatur rerum ipsam accusantium eius sequi quia enim deleniti fuga dolores.</p>
-        </div>
-
-      </div>
-      <div class="carousel-item d-flex flex-row bg-opacity-10">
-        <img src="public/img/event-private.jpg" alt="">
-        <div>
-          <h3>Custom Parties </h3>
-          <span>$99</span>
-          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quia in et consequuntur reprehenderit
-              dolorum rerum? Assumenda dolore voluptates maxime adipisci.</i></p>
-          <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, suscipit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, culpa.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, doloribus!</p>
-          </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus velit, sunt suscipit assumenda,
-            laboriosam pariatur rerum ipsam accusantium eius sequi quia enim deleniti fuga dolores.</p>
-        </div>
-
-      </div>
-      <div class="carousel-item d-flex flex-row bg-opacity-10">
-        <img src="public/img/event-birthday.jpg" class="img-fluid " alt="">
-        <div>
-          <h3>Custom Parties </h3>
+    <div class="d-flex flex-row ">
+      <div class="d-flex  flex-row  ">
+        <img src="public/img/event-birthday.jpg" alt="" class="">
+        <div class="d-flex flex-column justify-content-between">
+          <h3 class="text-primary">Custom Parties </h3>
           <span>$99</span>
           <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quia in et consequuntur reprehenderit
               dolorum rerum? Assumenda dolore voluptates maxime adipisci.</i></p>
@@ -260,23 +230,24 @@
       <h2>Book a Table</h2>
     </div>
 
-    <form class="w-100 d-flex flex-column justify-content-center align-items-center">
+    <form class="w-100 d-flex flex-column justify-content-center align-items-center gap-4">
       <div class="form-row d-flex flex-column gap-4 w-75 justify-content-center">
-        <div class="form-group d-flex flex-row justify-content-between">
-          <input type="text" class="form-control" id="input" placeholder="Your Name">
-          <input type="text" class="form-control" id="inputEmail4" placeholder="Your Email">
-          <input type="text" class="form-control" id="input" placeholder="Your Phone">
+        <div class="form-group d-flex flex-row justify-content-between gap-3">
+          <input type="text" class="form-control border-secondary" id="input" placeholder="Your Name">
+          <input type="text" class="form-control border-secondary" id="inputEmail4" placeholder="Your Email">
+          <input type="text" class="form-control border-secondary" id="input" placeholder="Your Phone">
         </div>
-        <div class="form-group d-flex flex-row justify-content-between">
-          <input type="text" class="form-control" id="input" placeholder="Date">
-          <input type="text" class="form-control" id="inputEmail4" placeholder="Time">
-          <input type="text" class="form-control" id="input" placeholder="# of people">
+        <div class="form-group d-flex flex-row justify-content-between gap-3">
+          <input type="text" class="form-control border-secondary" id="input" placeholder="Date">
+          <input type="text" class="form-control border-secondary" id="inputEmail4" placeholder="Time">
+          <input type="text" class="form-control border-secondary" id="input" placeholder="# of people">
         </div>
         <div class="form-group d-flex flex-row justify-content-center w-100"> 
-          <textarea name="message" id="messageInputOne" placeholder="Message" class="w-100"></textarea>
+          <textarea name="message" id="messageInputOne" placeholder="Message" class="w-100 border-secondary message-input ps-2"></textarea>
         </div>
       </div>
-      <button>Book a Table</button>
+      <button class="btn bg-primary btn-outline-primary my-2 my-sm-0 text-white rounded-pill ps-4 pt-2 pb-2 pe-4 position-relative ">Book a Table</button>
+      </form>
   </section>
   <section id="Gallery">
     <div class=" sect-title">
