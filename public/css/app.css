@@ -20420,5 +20420,28 @@ header .welcome-message .below-text-buttons button:hover {
 footer .lower-footer {
   background-color: black;
 }
+footer .round {
+  border-radius: 1000px;
+  width: 3rem;
+  height: 3rem;
+  background-color: red;
+  left: 2rem;
+  transition: 0.5s;
+}
+footer .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+footer a:hover {
+  background-color: #CCA855;
+}
+footer a:hover .round {
+  background-color: #CCA855;
+}
+footer a:hover .arrow {
+  color: black;
+}
 
 /*# sourceMappingURL=app.css.map */
