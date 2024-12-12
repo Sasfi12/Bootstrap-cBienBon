@@ -20287,18 +20287,16 @@ header .welcome-message .below-text-buttons button:hover {
 #whyUs .contents .border {
   padding: 4rem 2rem 4rem 2rem;
   background-color: #201E1A;
-  transition: 0.75s;
 }
 #whyUs .contents .border h2:first-child, #whyUs .contents .border .h2:first-child {
   color: #CCA855;
-  transition: 0.75s;
 }
 #whyUs .contents .border p {
-  transition: 0.75s;
   color: #A9A9A9;
 }
 #whyUs .contents .border:hover {
   background-color: #CCA855;
+  transform: scale(1.1, 1.1);
 }
 #whyUs .contents .border:hover h2:first-child, #whyUs .contents .border:hover .h2:first-child {
   color: white;
@@ -20346,9 +20344,9 @@ header .welcome-message .below-text-buttons button:hover {
   border: none;
 }
 
-#Menu div > .tab-content img {
-  width: 5rem;
-  height: 5rem;
+#Menu img {
+  width: 5rem !important;
+  height: 5rem !important;
 }
 
 #Reservations div > div > input {
