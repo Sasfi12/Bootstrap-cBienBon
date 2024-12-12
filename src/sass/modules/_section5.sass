@@ -1,6 +1,16 @@
-#Gallery  img 
-    height: 25rem 
-    width: 29rem
-    border: solid 3px #464337
-    border-top: none 
-    border-left: none
+#Gallery  
+    //overflow sur cette div  
+    .image-container
+        height: 100%
+        width: 100%
+        overflow: hidden
+        img 
+            height: 100% 
+            width: 100%
+            border: solid 3px #464337
+            border-top: none 
+            border-left: none
+            transition: 2s
+            object-fit: 120%
+        img:hover 
+            transform: scale(1.2 , 1.2)

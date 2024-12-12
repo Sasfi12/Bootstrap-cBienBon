@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CBIENBON</title>
   <link rel="stylesheet" href="public/css/app.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
 <body class=" text-white w-100 h-100">
@@ -82,13 +83,18 @@
         <p><i><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab dolor hic fugiat nisi ut itaque est minus
               recusandae tempore ea!</b></i></p>
         <div class="okays">
-          <div>
-            <i class="bi bi-check-circle"></i>
+          <div class="d-flex gap-2">
+            <i class="bi bi-check-circle text-primary"></i>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum?</p>
           </div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic.</p>
+          <div  class="d-flex gap-2 ">
+            <i class="bi bi-check-circle text-primary"></i><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic.</p>
+        </div>
+        <div  class="d-flex gap-2">
+          <i class="bi bi-check-circle text-primary"></i>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit quibusdam, ad quidem ab quae hic
             aliquid corporis tempora ipsam expedita libero voluptates laboriosam, molestias natus.</p>
+            </div>
         </div>
 
         <div>
@@ -234,7 +240,7 @@
           </div>
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-        
+
           <div class="row-cols-md-6 d-flex justify-content-evenly">
             <div>
               <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
@@ -283,76 +289,77 @@
               </div>
             </div>
 
+          </div>
         </div>
-      </div>
-      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-        <div class="row-cols-md-6 d-flex justify-content-evenly">
-          <div>
-            <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
-              <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
-              <div class="card-body">
-                <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
-                <p class="card-text ">Lorem ipsum dolor sit amet.</p>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+          <div class="row-cols-md-6 d-flex justify-content-evenly">
+            <div>
+              <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
+                <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
+                <div class="card-body">
+                  <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
+                  <p class="card-text ">Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
+                <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
+                <div class="card-body">
+                  <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
+                  <p class="card-text ">Lorem ipsum dolor sit amet.</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
-              <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
-              <div class="card-body">
-                <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
-                <p class="card-text ">Lorem ipsum dolor sit amet.</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
-              <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
-              <div class="card-body">
-                <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
-                <p class="card-text ">Lorem ipsum dolor sit amet.</p>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-      <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
-        <div class="row-cols-md-6 d-flex justify-content-evenly">
-          <div>
-            <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
-              <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
-              <div class="card-body">
-                <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
-                <p class="card-text ">Lorem ipsum dolor sit amet.</p>
-              </div>
-            </div>
-            <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
-              <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
-              <div class="card-body">
-                <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
-                <p class="card-text ">Lorem ipsum dolor sit amet.</p>
+            <div>
+              <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
+                <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
+                <div class="card-body">
+                  <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
+                  <p class="card-text ">Lorem ipsum dolor sit amet.</p>
+                </div>
               </div>
             </div>
           </div>
-          <div>
-            <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
-              <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
-              <div class="card-body">
-                <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
-                <p class="card-text ">Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+          tabindex="0">
+          <div class="row-cols-md-6 d-flex justify-content-evenly">
+            <div>
+              <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
+                <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
+                <div class="card-body">
+                  <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
+                  <p class="card-text ">Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
+                <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
+                <div class="card-body">
+                  <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
+                  <p class="card-text ">Lorem ipsum dolor sit amet.</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
-              <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
-              <div class="card-body">
-                <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
-                <p class="card-text ">Lorem ipsum dolor sit amet.</p>
+            <div>
+              <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
+                <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
+                <div class="card-body">
+                  <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
+                  <p class="card-text ">Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+              <div class="col-md-8 d-flex justify-content-between align-items-center gap-3">
+                <img src="public/img/menu/lobster-roll.jpg" alt="" class="rounded-circle">
+                <div class="card-body">
+                  <h5 class="card-title">Lobster Roll ................................................. $12.95</h5>
+                  <p class="card-text ">Lorem ipsum dolor sit amet.</p>
+                </div>
               </div>
             </div>
           </div>
-      </div>
-      </div>
+        </div>
 
-      
-  </div>
+
+      </div>
     </div>
 
     </div>
@@ -366,26 +373,6 @@
       </div>
       <h2>Organize Your Events In Our Restaurant</h2>
     </div>
-    <!-- Left here for futur re-usage -->
-    <!-- <div class="d-flex flex-row justify-content-center align-items-center">
-      <div class="d-flex  flex-row event-contents ">
-        <img src="public/img/event-birthday.jpg" alt="" class="">
-        <div class="d-flex flex-column justify-content-between">
-          <h3 class="text-primary">Custom Parties </h3>
-          <span >$99</span>
-          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quia in et consequuntur reprehenderit
-              dolorum rerum? Assumenda dolore voluptates maxime adipisci.</i></p>
-          <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, suscipit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, culpa.</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, doloribus!</p>
-          </div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus velit, sunt suscipit assumenda,
-            laboriosam pariatur rerum ipsam accusantium eius sequi quia enim deleniti fuga dolores.</p>
-        </div>
-
-      </div>
-    </div> -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -401,8 +388,8 @@
             <div class="d-flex  flex-row event-contents ">
               <img src="public/img/event-birthday.jpg" alt="" class="">
               <div class="d-flex flex-column ">
-                <h3 class="text-primary">Custom Parties </h3>
-                <span>$99</span>
+                <h3 class="text-primary">Birthday Parties </h3>
+                <h2 class="underlined-price">$199</h2>
                 <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quia in et consequuntur
                     reprehenderit
                     dolorum rerum? Assumenda dolore voluptates maxime adipisci.</i></p>
@@ -424,7 +411,7 @@
               <img src="public/img/event-private.jpg" alt="" class="">
               <div class="d-flex flex-column">
                 <h3 class="text-primary">Custom Parties </h3>
-                <span>$99</span>
+                <h2 class="underlined-price">$299</h2>
                 <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quia in et consequuntur
                     reprehenderit
                     dolorum rerum? Assumenda dolore voluptates maxime adipisci.</i></p>
@@ -446,7 +433,7 @@
               <img src="public/img/event-custom.jpg" alt="" class="">
               <div class="d-flex flex-column ">
                 <h3 class="text-primary">Custom Parties </h3>
-                <span>$99</span>
+                <h2 class="underlined-price">$99</h2>
                 <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quia in et consequuntur
                     reprehenderit
                     dolorum rerum? Assumenda dolore voluptates maxime adipisci.</i></p>
@@ -509,16 +496,33 @@
       <h2>Some photos from our Restaurant </h2>
     </div>
     <div class=" ms-2 me-2 justify-content-center align-items-center ">
+      <div class="d-flex justify-content-center align-items-center ">
+        <div class="image-container d-flex justify-content-center">
+          <img src="public/img/gallery/gallery-1.jpg" alt="tables" class="img-fluid">
+        </div>
+        <div class="image-container d-flex justify-content-center">
+          <img src="public/img/gallery/gallery-2.jpg " class="img-fluid" alt="another-table">
+        </div>
+        <div class="image-container d-flex justify-content-center">
+          <img src="public/img/gallery/gallery-3.jpg" class="img-fluid" alt="tables-with-glasses">
+        </div>
+        <div class="image-container d-flex justify-content-center">
+          <img src="public/img/gallery/gallery-4.jpg" class="img-fluid" alt="tables-again">
+        </div>
+      </div class="image-container d-flex justify-content-center">
       <div class="d-flex justify-content-center align-items-center">
-        <img src="public/img/gallery/gallery-1.jpg" alt="tables" class="img-fluid"><img
-          src="public/img/gallery/gallery-2.jpg " class="img-fluid" alt="another-table"><img
-          src="public/img/gallery/gallery-3.jpg" class="img-fluid" alt="tables-with-glasses"><img
-          src="public/img/gallery/gallery-4.jpg" class="img-fluid" alt="tables-again">
-      </div>
-      <div class="d-flex justify-content-center align-items-center"><img src="public/img/gallery/gallery-5.jpg "
-          class="img-fluid" alt="image"><img class="img-fluid" src="public/img/gallery/gallery-6.jpg" alt="image"><img
-          class="img-fluid" src="public/img/gallery/gallery-7.jpg" alt="image"><img class="img-fluid"
-          src="public/img/gallery/gallery-8.jpg" alt="image">
+        <div class="image-container d-flex justify-content-center">
+          <img src="public/img/gallery/gallery-5.jpg " class="img-fluid" alt="image">
+        </div>
+        <div class="image-container d-flex justify-content-center">
+          <img class="img-fluid" src="public/img/gallery/gallery-6.jpg" alt="image">
+        </div>
+        <div class="image-container d-flex justify-content-center">
+          <img class="img-fluid" src="public/img/gallery/gallery-7.jpg" alt="image">
+        </div>
+        <div class="image-container d-flex justify-content-center">
+          <img class="img-fluid" src="public/img/gallery/gallery-8.jpg" alt="image">
+        </div>
       </div>
     </div>
   </section>
@@ -559,12 +563,14 @@
       </div>
       <div class="d-flex contact-info-and-form">
         <div class="locations">
-          <div class="d-flex gap-2 ms-2">icon <div class="primary">
+          <div class="d-flex gap-2 ms-2"><i></i>
+            <div class="primary">
               <h2>Location:</h2>
               <p>Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
-          <div class="d-flex gap-2 ms-2">icon <div>
+          <div class="d-flex gap-2 ms-2"><i></i>
+            <div>
               <h2>Open Hours:</h2>
               <p>Monday-Saturday:</p>
               <p>
@@ -572,12 +578,14 @@
               </p>
             </div>
           </div>
-          <div class="d-flex gap-2 ms-2">icon <div>
+          <div class="d-flex gap-2 ms-2"><i></i>
+            <div>
               <h2>Location:</h2>
               <p>info@example.com</p>
             </div>
           </div>
-          <div class="d-flex gap-2 ms-2">icon <div>
+          <div class="d-flex gap-2 ms-2"><i></i>
+            <div>
               <h2>Location:</h2>
               <p>+1 5589 55488 55s</p>
             </div>
@@ -606,7 +614,7 @@
   </section>
   <hr>
   <footer>
-    <div class="upper-footer d-flex flex-row justify-content-between">
+    <div class="upper-footer d-flex flex-row justify-content-between ms-5 me-5">
       <div class="upper-upper-footer">
         <div class="contact-information">
           <h3>CBIENBON</h3>
@@ -627,15 +635,26 @@
       </div>
       <div class="d-flex gap-5">
         <div>
-          <h4>Useful Links</h4>
-          <p>Home</p>
-          <p>About us</p>
-          <p>Service</p>
-          <p>Terms of service </p>
-          <p>Privacy policy</p>
+          <h4><b>Useful Links</b></h4>
+          <div><i></i>
+            <p>Home</p>
+          </div>
+          <div><i></i>
+            <p>About us</p>
+          </div>
+          <div><i></i>
+            <p>Service</p>
+          </div>
+          <div><i></i>
+            <p>Terms of service </p>
+          </div>
+          <div><i></i>
+            <p>Privacy policy</p>
+          </div>
+          <!-- Looking for the right symbol... -->
         </div>
         <div>
-          <h4>Our Services</h4>
+          <h4><b>Our Services</b></h4>
           <p>Web Design</p>
           <p>Web Development</p>
           <p>Product Management</p>
@@ -645,18 +664,20 @@
       </div>
       <div>
         <h4>
-          Our Newsletter
+          <b>Our Newsletter</b>
         </h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ullam velit in.</p>
-        <div>
-          <button>Subscribe</button>
+        <div class="border d-flex justify-content-end position-relative border-secondary rounded-pill ">
+          <button class="  btn btn-outline-primary bg-primary my-2 my-sm-0 text-white rounded-pill ps-4 pt-2 pb-2 pe-4"
+            type="submit">Subscribe</button>
         </div>
       </div>
     </div>
     <div class="lower-footer justify-content-center d-flex p-5">
       <p>© Copyright <b>CBIENBON.</b> All Rights Reserved</p>
       <a href="#">
-        s
+        <i class="bi bi-arrow-up-circle display-4 "></i>
+
       </a>
     </div>
   </footer>

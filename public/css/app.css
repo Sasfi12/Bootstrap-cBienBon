@@ -20254,7 +20254,7 @@ header .welcome-message .below-text-buttons button:hover {
   width: 2rem;
   position: absolute;
   bottom: 1.5rem;
-  left: 44rem;
+  left: 43rem;
   border-color: #CCA855;
 }
 #voluptatem .voluptatem-content .img-container img {
@@ -20343,6 +20343,11 @@ header .welcome-message .below-text-buttons button:hover {
   background: none;
   border: none;
 }
+#Events .underlined-price {
+  text-decoration: underline 2px;
+  text-decoration-color: #CCA855;
+  font-weight: 20px;
+}
 
 #Menu img {
   width: 5rem !important;
@@ -20367,12 +20372,27 @@ header .welcome-message .below-text-buttons button:hover {
   color: white;
 }
 
-#Gallery img {
-  height: 25rem;
-  width: 29rem;
+#Gallery .image-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#Gallery .image-container img {
+  height: 100%;
+  width: 100%;
   border: solid 3px #464337;
   border-top: none;
   border-left: none;
+  transition: 2s;
+  object-fit: 120%;
+}
+#Gallery .image-container img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+#Chefs img {
+  width: 100%;
+  height: 100%;
 }
 
 #contactUs div > div > input {
