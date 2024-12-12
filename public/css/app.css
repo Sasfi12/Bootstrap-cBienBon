@@ -20314,6 +20314,8 @@ header .welcome-message .below-text-buttons button:hover {
   height: 600px;
   padding-top: 0%;
   background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: rem;
 }
 #Events .event-bg {
@@ -20391,6 +20393,10 @@ header .welcome-message .below-text-buttons button:hover {
   height: 10vh;
   background: none;
   color: white;
+}
+#contactUs .contact-info-and-form {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 footer .lower-footer {
