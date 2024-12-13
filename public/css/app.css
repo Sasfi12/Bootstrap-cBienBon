@@ -20430,12 +20430,6 @@ footer .round {
   left: 2rem;
   transition: 0.5s;
 }
-footer .arrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-}
 footer a:hover .round {
   background-color: #CCA855;
 }
