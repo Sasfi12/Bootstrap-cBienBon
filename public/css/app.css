@@ -20339,10 +20339,9 @@ header .welcome-message .below-text-buttons button:hover {
 #Events li > div:hover {
   cursor: pointer;
 }
-#Events carousel-indicators > button {
-  display: none;
-  background: none;
-  border: none;
+#Events .carousel-indicators {
+  position: absolute;
+  top: 20em;
 }
 #Events .underlined-price {
   text-decoration: underline 2px;
