@@ -20082,6 +20082,11 @@ body {
   background-color: #201E1A;
 }
 
+.sect-title {
+  padding-left: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 .sect-title h2, .sect-title .h2 {
   color: #CCA855;
 }
@@ -20285,28 +20290,29 @@ header .welcome-message .below-text-buttons button:hover {
 #whyUs .contents {
   justify-content: center;
 }
-#whyUs .contents .border {
+#whyUs .contents .why-card {
   padding: 4rem 2rem 4rem 2rem;
   background-color: #201E1A;
 }
-#whyUs .contents .border h2:first-child, #whyUs .contents .border .h2:first-child {
+#whyUs .contents .why-card h2:first-child, #whyUs .contents .why-card .h2:first-child {
   color: #CCA855;
 }
-#whyUs .contents .border p {
+#whyUs .contents .why-card p {
   color: #A9A9A9;
 }
-#whyUs .contents .border:hover {
+#whyUs .contents .why-card:hover {
   background-color: #CCA855;
   transform: scale(1.1, 1.1);
 }
-#whyUs .contents .border:hover h2:first-child, #whyUs .contents .border:hover .h2:first-child {
+#whyUs .contents .why-card:hover h2:first-child, #whyUs .contents .why-card:hover .h2:first-child {
   color: white;
 }
-#whyUs .contents .border:hover p {
+#whyUs .contents .why-card:hover p {
   color: white;
 }
 
 #Events {
+  overflow: hidden;
   position: relative;
   background-image: url("../../public/img/events-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   width: 100%;
@@ -20317,18 +20323,12 @@ header .welcome-message .below-text-buttons button:hover {
   background-size: cover;
   padding: rem;
 }
-#Events .event-bg {
-  z-index: -1;
-  position: absolute;
-  object-fit: cover;
-  opacity: 0.1;
-}
 #Events .sect-title {
   z-index: 1;
 }
 #Events .event-contents img {
-  height: 500px;
-  width: 500ox;
+  height: 300px;
+  width: 250ox;
 }
 #Events li > div {
   width: 50px;
@@ -20435,6 +20435,13 @@ footer a:hover .round {
 }
 footer a:hover .arrow {
   color: black;
+}
+
+.go-back-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 /*# sourceMappingURL=app.css.map */
