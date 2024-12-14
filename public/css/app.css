@@ -20312,23 +20312,28 @@ header .welcome-message .below-text-buttons button:hover {
 }
 
 #Events {
-  overflow: hidden;
   position: relative;
   background-image: url("../../public/img/events-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   width: 100%;
-  height: 600px;
+  height: 100%;
   padding-top: 0%;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+  object-fit: cover;
   padding: rem;
 }
 #Events .sect-title {
   z-index: 1;
 }
+#Events .event-contents {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 5rem;
+}
 #Events .event-contents img {
-  height: 300px;
-  width: 250ox;
+  height: 30em;
+  width: 40em;
 }
 #Events li > div {
   width: 50px;
@@ -20342,11 +20347,13 @@ header .welcome-message .below-text-buttons button:hover {
 #Events .carousel-indicators {
   position: absolute;
   top: 20em;
+  display: flex;
+  align-items: flex-end;
 }
-#Events .underlined-price {
-  text-decoration: underline 2px;
-  text-decoration-color: #CCA855;
-  font-weight: 20px;
+#Events .carousel-indicators button {
+  background: #CCA855;
+  width: 20px;
+  height: 0.5px;
 }
 
 #Menu img {
