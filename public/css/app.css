@@ -20084,15 +20084,15 @@ body {
 
 .sect-title {
   padding-left: 5rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .sect-title h2, .sect-title .h2 {
   color: #CCA855;
 }
 
-.display-7 {
-  font-size: calc(0.75rem + 1vw);
+.text-volupt {
+  font-size: 100%;
 }
 
 nav {
@@ -20119,10 +20119,11 @@ nav .collapse > ul > li > a:hover {
 }
 
 header {
-  margin: 0 auto;
-  width: 100;
-  position: relative;
-  color: white;
+  background-image: url("../../public/img/hero-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
 }
 header img {
   z-index: -1;
@@ -20231,17 +20232,15 @@ header .welcome-message .below-text-buttons button:hover {
   background-image: url("../../public/img/about-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-blend-mode: overlay;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   object-fit: cover;
-  padding: 5rem;
+  padding: 2rem;
   z-index: -1;
-}
-#voluptatem img {
-  opacity: 0.15;
 }
 #voluptatem .voluptatem-content {
   position: absolute;
   z-index: 0;
+  width: 80%;
 }
 #voluptatem .voluptatem-content .img-container {
   position: relative;
@@ -20268,16 +20267,16 @@ header .welcome-message .below-text-buttons button:hover {
   border-bottom: 0.3rem solid;
   width: 2rem;
   position: absolute;
-  bottom: 1.5rem;
-  left: 43rem;
+  bottom: -1rem;
+  left: 35rem;
   border-color: #CCA855;
 }
 #voluptatem .voluptatem-content .img-container img {
   transition: 0.5s;
   border: gray solid;
   opacity: 1;
-  width: 50rem;
-  height: 40rem;
+  width: 40rem;
+  height: 30rem;
   object-fit: cover;
 }
 #voluptatem .voluptatem-content .img-container:hover img {
@@ -20331,9 +20330,12 @@ header .welcome-message .below-text-buttons button:hover {
 #Events .sect-title {
   z-index: 1;
 }
+#Events .event-contents {
+  padding: 2rem;
+}
 #Events .event-contents img {
-  height: 60%;
-  width: 70%;
+  height: 40%;
+  width: 30%;
 }
 #Events li > div {
   width: 50px;
