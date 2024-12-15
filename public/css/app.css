@@ -20415,8 +20415,8 @@ header .welcome-message .below-text-buttons button:hover {
     flex-direction: column;
   }
   #Menu .tab-pane .menu-item {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 }
 #Reservations div > div > input {
