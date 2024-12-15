@@ -20404,10 +20404,16 @@ header .welcome-message .below-text-buttons button:hover {
   flex-direction: column;
   justify-content: center;
 }
+#Menu .tab-pane .left-menu .menu-item .product .product-price > span:nth-child(3), #Menu .tab-pane .right-menu .menu-item .product .product-price > span:nth-child(3) {
+  color: #CCA855;
+}
 #Menu .tab-pane .left-menu .menu-item img, #Menu .tab-pane .right-menu .menu-item img {
   width: 5rem !important;
   height: 5rem !important;
   border: solid #4B4A46 5px;
+}
+#Menu .tab-pane:not(.active) {
+  display: none !important;
 }
 
 @media (max-width: 768px) {
