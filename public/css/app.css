@@ -20392,15 +20392,33 @@ header .welcome-message .below-text-buttons button:hover {
 #Menu {
   padding-bottom: 3rem;
 }
-#Menu img {
+#Menu .tab-pane {
+  display: flex;
+  justify-content: space-evenly;
+}
+#Menu .tab-pane .left-menu .menu-item, #Menu .tab-pane .right-menu .menu-item {
+  display: flex;
+}
+#Menu .tab-pane .left-menu .menu-item .product, #Menu .tab-pane .right-menu .menu-item .product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Menu .tab-pane .left-menu .menu-item img, #Menu .tab-pane .right-menu .menu-item img {
   width: 5rem !important;
   height: 5rem !important;
   border: solid #4B4A46 5px;
 }
-#Menu .card-text {
-  color: #7D7C7A;
-}
 
+@media (max-width: 768px) {
+  #Menu .tab-pane {
+    flex-direction: column;
+  }
+  #Menu .tab-pane .menu-item {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 #Reservations div > div > input {
   height: 2rem;
   background: none;

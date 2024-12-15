@@ -1,8 +1,27 @@
 #Menu 
     padding-bottom: 3rem
-    img 
-        width: 5rem !important
-        height: 5rem !important
-        border: solid #4B4A46 5px
-    .card-text 
-        color: #7D7C7A
+    .tab-pane
+        display: flex
+        justify-content: space-evenly
+        .left-menu, .right-menu
+            .menu-item
+                display: flex
+                div:first-child
+
+                .product 
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                img 
+                    width: 5rem !important
+                    height: 5rem !important
+                    border: solid #4B4A46 5px
+
+@media(max-width: 768px) 
+    #Menu 
+        .tab-pane
+            .left-menu , .right-menu
+            flex-direction: column
+            .menu-item 
+                flex-direction: column 
+                align-items: center
