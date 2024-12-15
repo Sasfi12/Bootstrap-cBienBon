@@ -20164,7 +20164,7 @@ header .welcome-message .below-text-buttons button:hover {
 .video-play-button {
   position: absolute;
   z-index: 10;
-  left: 100%;
+  left: 90%;
   transform: translateX(-50%) translateY(-50%);
   box-sizing: content-box;
   display: block;
@@ -20233,6 +20233,7 @@ header .welcome-message .below-text-buttons button:hover {
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   object-fit: cover;
   padding: 2rem;
   z-index: -1;
@@ -20304,6 +20305,7 @@ header .welcome-message .below-text-buttons button:hover {
 }
 #whyUs .contents .why-card h2:first-child, #whyUs .contents .why-card .h2:first-child {
   color: #CCA855;
+  font-weight: bolder;
 }
 #whyUs .contents .why-card p {
   color: #A9A9A9;
