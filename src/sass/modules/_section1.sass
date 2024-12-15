@@ -2,7 +2,7 @@
     background-image: url("../../public/img/about-bg.jpg"), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) 
     background-blend-mode: overlay
     background-repeat: no-repeat
-    background-size: cover
+    background-size: contain
     background-attachment: fixed
     object-fit: cover
     padding: 2rem
@@ -15,6 +15,8 @@
             position: relative
             transition: 1s
             overflow: hidden
+            height: 80% 
+            width: 80%
             .upper-corner
                 transition: 0.5s
                 padding: 2rem 
@@ -34,8 +36,8 @@
                 border-bottom: 0.3rem solid
                 width: 2rem
                 position: absolute
-                bottom: -1rem
-                left: 35rem
+                bottom: 2.25rem
+                left: 33.5rem
                 border-color: #CCA855
             img 
                 transition: 0.5s

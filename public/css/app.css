@@ -20122,8 +20122,9 @@ header {
   background-image: url("../../public/img/hero-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-blend-mode: overlay;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   object-fit: cover;
+  background-attachment: fixed;
 }
 header img {
   z-index: -1;
@@ -20232,7 +20233,7 @@ header .welcome-message .below-text-buttons button:hover {
   background-image: url("../../public/img/about-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-blend-mode: overlay;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   object-fit: cover;
   padding: 2rem;
@@ -20247,6 +20248,8 @@ header .welcome-message .below-text-buttons button:hover {
   position: relative;
   transition: 1s;
   overflow: hidden;
+  height: 80%;
+  width: 80%;
 }
 #voluptatem .voluptatem-content .img-container .upper-corner {
   transition: 0.5s;
@@ -20268,8 +20271,8 @@ header .welcome-message .below-text-buttons button:hover {
   border-bottom: 0.3rem solid;
   width: 2rem;
   position: absolute;
-  bottom: -1rem;
-  left: 35rem;
+  bottom: 2.25rem;
+  left: 33.5rem;
   border-color: #CCA855;
 }
 #voluptatem .voluptatem-content .img-container img {
@@ -20361,9 +20364,16 @@ header .welcome-message .below-text-buttons button:hover {
   height: auto auto;
 }
 
+#Menu {
+  padding-bottom: 3rem;
+}
 #Menu img {
   width: 5rem !important;
   height: 5rem !important;
+  border: solid #4B4A46 5px;
+}
+#Menu .card-text {
+  color: #7D7C7A;
 }
 
 #Reservations div > div > input {
