@@ -20481,9 +20481,12 @@ header .welcome-message .below-text-buttons button:hover {
 }
 
 @media (max-width: 500px) {
-  #Gallery {
+  #Gallery .image-div {
     flex-wrap: wrap;
   }
+}
+#Chefs .les-heffes {
+  justify-content: center;
 }
 #Chefs img {
   width: 25rem;
@@ -20499,16 +20502,16 @@ header .welcome-message .below-text-buttons button:hover {
     height: 20rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
   #Chefs div:nth-child(2) {
     flex-wrap: wrap;
     justify-content: start;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 667px) {
   #Chefs div:nth-child(2) {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
 }
 #contactUs {
