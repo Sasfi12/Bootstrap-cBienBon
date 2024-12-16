@@ -20300,8 +20300,8 @@ header .welcome-message .below-text-buttons button:hover {
 
 @media (max-width: 1190px) {
   #voluptatem .img-container {
-    height: contain;
-    width: contain;
+    height: 0% !important;
+    width: 50%;
   }
 }
 @media (max-width: 820px) {
@@ -20384,9 +20384,11 @@ header .welcome-message .below-text-buttons button:hover {
   gap: 2rem;
 }
 #Events .carousel-indicators button {
+  display: block;
+  border-radius: 100%;
   background: #CCA855;
-  width: auto auto;
-  height: auto auto;
+  width: 20px;
+  height: 10px;
 }
 
 #Menu {
