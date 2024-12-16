@@ -20600,7 +20600,7 @@ footer .upper-footer {
     width: 100% !important;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .two-inputs {
     display: flex;
     flex-direction: column !important;
@@ -20609,27 +20609,16 @@ footer .upper-footer {
 footer .lower-footer {
   background-color: black;
 }
-footer .round {
-  border-radius: 1000px;
-  width: 3rem;
-  height: 3rem;
-  border: solid;
-  border-color: #CCA855;
-  left: 2rem;
-  transition: 0.5s;
-}
-footer a:hover .round {
+footer .go-back-button:hover {
   background-color: #CCA855;
-}
-footer a:hover .arrow {
-  color: black;
 }
 
 .go-back-button {
   position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: 1000;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+  transition: 2s;
 }
 
 /*# sourceMappingURL=app.css.map */
