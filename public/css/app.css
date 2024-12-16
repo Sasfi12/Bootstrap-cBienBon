@@ -20408,6 +20408,12 @@ header .welcome-message .below-text-buttons button:hover {
 #Menu .tab-pane {
   display: flex;
   justify-content: space-evenly;
+  gap: 2rem;
+}
+#Menu .tab-pane .left-menu, #Menu .tab-pane .right-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 #Menu .tab-pane .left-menu .menu-item, #Menu .tab-pane .right-menu .menu-item {
   display: flex;
@@ -20474,6 +20480,11 @@ header .welcome-message .below-text-buttons button:hover {
   transform: scale(1.2, 1.2);
 }
 
+@media (max-width: 500px) {
+  #Gallery {
+    flex-wrap: wrap;
+  }
+}
 #Chefs img {
   width: 25rem;
   height: 25rem;
