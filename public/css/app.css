@@ -20300,19 +20300,30 @@ header .welcome-message .below-text-buttons button:hover {
 
 @media (max-width: 1190px) {
   #voluptatem .img-container {
-    height: 0% !important;
-    width: 50%;
+    height: 20% !important;
+    width: 50% !important;
+  }
+  #voluptatem .img-container img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #voluptatem .img-container .text-volupt {
+    width: 100%;
   }
 }
-@media (max-width: 820px) {
+@media (max-width: 850px) {
   #voluptatem .voluptatem-content {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column-reverse;
   }
   #voluptatem .voluptatem-content .img-container {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #voluptatem .voluptatem-content .img-container img {
+    width: 100% !important;
+    height: 100% !important;
   }
   #voluptatem .voluptatem-content .text-volupt {
     width: 100%;
@@ -20385,10 +20396,10 @@ header .welcome-message .below-text-buttons button:hover {
 }
 #Events .carousel-indicators button {
   display: block;
-  border-radius: 100%;
+  border-radius: 50% !important;
   background: #CCA855;
-  width: 20px;
-  height: 10px;
+  width: 15px !important;
+  height: 15px !important;
 }
 
 #Menu {
@@ -20469,6 +20480,9 @@ header .welcome-message .below-text-buttons button:hover {
 }
 
 @media (max-width: 1260px) {
+  #Chefs .les-heffes {
+    justify-content: center;
+  }
   #Chefs img {
     width: 20rem;
     height: 20rem;
@@ -20477,12 +20491,17 @@ header .welcome-message .below-text-buttons button:hover {
 @media (max-width: 1000px) {
   #Chefs div:nth-child(2) {
     flex-wrap: wrap;
+    justify-content: start;
   }
 }
 @media (max-width: 768px) {
   #Chefs div:nth-child(2) {
     flex-direction: column;
+    justify-content: center;
   }
+}
+#contactUs {
+  padding-bottom: 2rem;
 }
 #contactUs div > div > input {
   height: 2rem;
@@ -20504,6 +20523,10 @@ header .welcome-message .below-text-buttons button:hover {
 #contactUs .contact-info-and-form {
   display: flex;
   justify-content: space-evenly;
+}
+
+footer .upper-footer {
+  padding-bottom: 2rem;
 }
 
 footer .lower-footer {
