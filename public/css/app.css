@@ -20419,7 +20419,7 @@ header .welcome-message .below-text-buttons button:hover {
     width: 100% !important;
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   #Events .event-contents {
     width: 100%;
     flex-direction: column !important;
@@ -20508,8 +20508,9 @@ header .welcome-message .below-text-buttons button:hover {
 }
 
 @media (max-width: 500px) {
-  #Gallery .image-div {
-    flex-wrap: wrap;
+  #Gallery .image-div .images {
+    display: flex;
+    flex-direction: column;
   }
 }
 #Chefs .les-heffes {
