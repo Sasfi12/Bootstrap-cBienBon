@@ -20489,11 +20489,11 @@ header .welcome-message .below-text-buttons button:hover {
   color: white;
 }
 
-#Gallery .image-div .images .twoimage-container .image-container {
+#Gallery .image-div .images .image-container {
   width: 100%;
   overflow: hidden;
 }
-#Gallery .image-div .images .twoimage-container .image-container img {
+#Gallery .image-div .images .image-container img {
   height: 100%;
   width: 100%;
   border: solid 3px #464337;
@@ -20502,24 +20502,10 @@ header .welcome-message .below-text-buttons button:hover {
   transition: 2s;
   object-fit: 120%;
 }
-#Gallery .image-div .images .twoimage-container .image-container img:hover {
+#Gallery .image-div .images .image-container img:hover {
   transform: scale(1.2, 1.2);
 }
 
-@media (max-width: 500px) {
-  #Gallery .image-div {
-    display: flex;
-    flex-direction: column;
-  }
-  #Gallery .image-div .images {
-    display: flex;
-    flex-direction: column;
-  }
-  #Gallery .image-div .images .twoimage-container {
-    display: flex;
-    flex-direction: column;
-  }
-}
 #Chefs .les-heffes {
   justify-content: center;
 }
