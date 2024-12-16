@@ -1,5 +1,4 @@
 #contactUs 
-    padding-bottom: 2rem
     div > div > input 
         height: 2rem
         background: none
@@ -19,3 +18,18 @@
 footer 
     .upper-footer 
         padding-bottom: 2rem
+
+@media(max-width: 800px)
+    #contactUs 
+        .content 
+            .contact-info-and-form
+                display: flex 
+                flex-direction: column
+                form 
+                    width: 100%!important
+
+@media(max-width: 500px) 
+    .two-inputs
+        display: flex 
+        flex-direction: column!important     
+

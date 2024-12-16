@@ -20565,9 +20565,6 @@ header .welcome-message .below-text-buttons button:hover {
     align-items: center;
   }
 }
-#contactUs {
-  padding-bottom: 2rem;
-}
 #contactUs div > div > input {
   height: 2rem;
   background: none;
@@ -20594,6 +20591,21 @@ footer .upper-footer {
   padding-bottom: 2rem;
 }
 
+@media (max-width: 800px) {
+  #contactUs .content .contact-info-and-form {
+    display: flex;
+    flex-direction: column;
+  }
+  #contactUs .content .contact-info-and-form form {
+    width: 100% !important;
+  }
+}
+@media (max-width: 500px) {
+  .two-inputs {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
 footer .lower-footer {
   background-color: black;
 }
