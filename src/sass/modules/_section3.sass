@@ -5,14 +5,17 @@
     background-repeat: no-repeat
     background-size: cover
     object-fit: center
-    
-    .sect-title 
-        z-index: 1
-    .event-contents
-        padding: 2rem
-        img 
-            height: 40%
-            width: 30%
+    .carousel 
+        width: 100%
+        padding: 2.5rem
+        .sect-title 
+            z-index: 1
+        .event-contents
+            display: flex 
+            flex-direction: column
+            img 
+                height: 60%
+                width: 60%
     li > div 
         width: 50px 
         height: 50px 
@@ -34,7 +37,21 @@
             height: 15px!important
             
 // find a way to make carousel button keep #CCA855 color after click. 
-    .underlined-price
-        text-decoration: underline 2px
-        text-decoration-color: #CCA855
-        font-weight: 20px
+.underlined-price
+    text-decoration: underline 2px
+    text-decoration-color: #CCA855
+    font-weight: 20px
+@media (max-width: 1090px)
+    #Events
+        .event-contents
+            img 
+                height: 100%!important
+                width: 100%!important
+@media (max-width: 950px)
+    #Events
+        .event-contents
+            width: 100% 
+            flex-direction: column!important
+            img 
+                height: 100%!important
+                width: 100%!important

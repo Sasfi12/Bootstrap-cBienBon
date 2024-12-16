@@ -20368,15 +20368,20 @@ header .welcome-message .below-text-buttons button:hover {
   background-size: cover;
   object-fit: center;
 }
-#Events .sect-title {
+#Events .carousel {
+  width: 100%;
+  padding: 2.5rem;
+}
+#Events .carousel .sect-title {
   z-index: 1;
 }
-#Events .event-contents {
-  padding: 2rem;
+#Events .carousel .event-contents {
+  display: flex;
+  flex-direction: column;
 }
-#Events .event-contents img {
-  height: 40%;
-  width: 30%;
+#Events .carousel .event-contents img {
+  height: 60%;
+  width: 60%;
 }
 #Events li > div {
   width: 50px;
@@ -20402,6 +20407,28 @@ header .welcome-message .below-text-buttons button:hover {
   height: 15px !important;
 }
 
+.underlined-price {
+  text-decoration: underline 2px;
+  text-decoration-color: #CCA855;
+  font-weight: 20px;
+}
+
+@media (max-width: 1090px) {
+  #Events .event-contents img {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 950px) {
+  #Events .event-contents {
+    width: 100%;
+    flex-direction: column !important;
+  }
+  #Events .event-contents img {
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
 #Menu {
   padding-bottom: 3rem;
 }
