@@ -1,36 +1,45 @@
 #Gallery  
     .image-div
         .images
-            //overflow sur cette div  
-            .image-container
-                width: 100%
-                overflow: hidden
-                img 
-                    height: 100% 
+            .twoimage-container
+                //overflow sur cette div  
+                .image-container
                     width: 100%
-                    border: solid 3px #464337
-                    border-top: none 
-                    border-left: none
-                    transition: 2s
-                    object-fit: 120%
-                img:hover 
-                    transform: scale(1.2 , 1.2)
+                    overflow: hidden
+                    img 
+                        height: 100% 
+                        width: 100%
+                        border: solid 3px #464337
+                        border-top: none 
+                        border-left: none
+                        transition: 2s
+                        object-fit: 120%
+                    img:hover 
+                        transform: scale(1.2 , 1.2)
 
-// @media (max-width: 500px)
-//     #Gallery
-//         .image-div
-//             display: flex 
-//             flex-direction: column
-//             .images
-//                 display: flex 
-//                 flex-direction: row
-// @media (max-width: 800px)
-//     #Gallery
-//         .image-div
-//             display: flex 
-//             flex-direction: column
-//             .images
-//                 display: flex 
-//                 .twoimage-container 
+@media (max-width: 500px)
+    #Gallery
+        .image-div
+            display: flex 
+            flex-direction: column
+            .images
+                display: flex 
+                flex-direction: column
+                flex-wrap: wrap
+                .twoimage-container 
+                    display: flex
+                    flex-direction: column!important
+@media (max-width: 750px)
+    #Gallery
+        .image-div
+            display: flex 
+            flex-direction: column
+            .images
+                display: flex 
+                flex-direction: column
+                flex-wrap: wrap
+                .twoimage-container 
+                    display: flex
+                    flex-direction: row
             
 
