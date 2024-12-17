@@ -20421,14 +20421,25 @@ header .welcome-message .below-text-buttons button:hover {
   top: 20em;
   display: flex;
   align-items: flex-end;
-  gap: 2rem;
+  gap: 0.5rem;
+}
+#Events .carousel-indicators button:not(.active) {
+  display: block;
+  border-radius: 50% !important;
+  background: grey !important;
+  width: 30px !important;
+  height: 10px !important;
+  transform: scale(0.5, 0.5);
+  transition: 1s;
 }
 #Events .carousel-indicators button {
   display: block;
   border-radius: 50% !important;
-  background: #CCA855;
-  width: 15px !important;
-  height: 15px !important;
+  background: #CCA855 !important;
+  width: 30px !important;
+  height: 10px !important;
+  transform: scale(0.65, 0.65);
+  transition: 1s;
 }
 
 .underlined-price {
@@ -20665,12 +20676,12 @@ footer .go-back-button:hover {
   footer .upper-footer .up {
     display: flex;
     flex-direction: row !important;
-    justify-content: space-between !important;
+    justify-content: flex-start !important;
   }
   footer .upper-footer .down {
     display: flex;
     flex-direction: row !important;
-    justify-content: space-between !important;
+    justify-content: flex-start !important;
   }
 }
 @media (max-width: 500px) {
