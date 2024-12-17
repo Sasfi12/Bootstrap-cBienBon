@@ -20119,7 +20119,7 @@ nav .collapse > ul > li > a:hover {
 }
 
 @media (max-width: 780px) {
-  .btn-outline-primary {
+  nav .btn-outline-primary {
     display: none;
   }
 }
