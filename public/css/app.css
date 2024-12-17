@@ -20461,6 +20461,13 @@ header .welcome-message .below-text-buttons button:hover {
 #Menu .tab-pane:not(.active) {
   display: none !important;
 }
+#Menu button:not(.active) {
+  color: white;
+}
+#Menu button {
+  background: none;
+  color: #CCA855;
+}
 
 @media (max-width: 768px) {
   #Menu .tab-pane {
