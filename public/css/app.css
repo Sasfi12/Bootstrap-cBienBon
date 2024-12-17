@@ -20124,12 +20124,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  object-fit: cover;
-}
-header img {
-  z-index: -1;
-  position: relative;
-  object-fit: cover;
 }
 header .welcome-message {
   z-index: 1;
@@ -20165,8 +20159,9 @@ header .welcome-message .below-text-buttons button:hover {
 .video-play-button {
   position: absolute;
   z-index: 10;
-  left: 90%;
   transform: translateX(-50%) translateY(-50%);
+  left: 75%;
+  bottom: 45%;
   box-sizing: content-box;
   display: block;
   width: 15px;
@@ -20227,6 +20222,26 @@ header .welcome-message .below-text-buttons button:hover {
   100% {
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
     opacity: 0;
+  }
+}
+@media (max-width: 780px) {
+  .welcome-message {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .welcome-message div {
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+  .welcome-message .below-text-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .video-play-button {
+    bottom: 22%;
+    left: 54%;
   }
 }
 #voluptatem {
@@ -20326,6 +20341,10 @@ header .welcome-message .below-text-buttons button:hover {
     height: 100% !important;
   }
   #voluptatem .voluptatem-content .text-volupt {
+    width: 100%;
+    text-align: center;
+  }
+  #voluptatem .voluptatem-content .text-volupt p {
     width: 100%;
   }
 }

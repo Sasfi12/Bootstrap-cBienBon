@@ -4,12 +4,6 @@ header
     background-repeat: no-repeat
     background-size: cover
     background-attachment: fixed
-    object-fit: cover
-    
-    img 
-        z-index: -1
-        position: relative
-        object-fit: cover
     .welcome-message
         z-index: 1
         h1 
@@ -38,8 +32,9 @@ header
 .video-play-button 
     position: absolute
     z-index: 10
-    left: 90%
     transform: translateX(-50%) translateY(-50%)
+    left: 75%
+    bottom: 45%
     box-sizing: content-box
     display: block
     width: 15px
@@ -101,5 +96,21 @@ header
     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5)
     opacity: 0
 
-@media(max-width: 1780px)
+@media(max-width: 780px)
+    .welcome-message
+        flex-direction: column!important
+        align-items: center!important 
+        justify-content: center!important
+        div
+            align-items: center!important 
+            justify-content: center!important
+            text-align: center
+        .below-text-buttons 
+            display: flex
+            justify-content: center
+    .video-play-button 
+        bottom: 22%        
+        left: 54%
+
+        
     
