@@ -20118,6 +20118,11 @@ nav .collapse > ul > li > a:hover {
   color: #CCA855;
 }
 
+@media (max-width: 780px) {
+  .btn-outline-primary {
+    display: none;
+  }
+}
 header {
   background-image: url("../../public/img/hero-bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-blend-mode: overlay;
@@ -20241,7 +20246,7 @@ header .welcome-message .below-text-buttons button:hover {
   }
   .video-play-button {
     bottom: 22%;
-    left: 54%;
+    left: 53.5%;
   }
 }
 #voluptatem {
