@@ -20118,7 +20118,17 @@ nav .collapse > ul > li > a:hover {
   color: #CCA855;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1250px) {
+  nav .collapse > ul > li > a {
+    font-size: 0.9rem;
+    color: white;
+    transition: 0.5;
+  }
+}
+@media (max-width: 900px) {
+  nav {
+    justify-content: space-between !important;
+  }
   nav .btn-outline-primary {
     display: none;
   }
@@ -20569,7 +20579,7 @@ header .welcome-message .below-text-buttons button:hover {
     flex-direction: column !important;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 890px) {
   #Gallery .image-div {
     display: flex;
     flex-direction: column;
