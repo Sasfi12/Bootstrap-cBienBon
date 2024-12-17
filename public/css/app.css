@@ -20489,6 +20489,12 @@ header .welcome-message .below-text-buttons button:hover {
   color: white;
 }
 
+@media (max-width: 800px) {
+  #Reservations div > div {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
 #Gallery .image-div .images .twoimage-container .image-container {
   width: 100%;
   overflow: hidden;
@@ -20619,6 +20625,37 @@ footer .go-back-button:hover {
   right: 1rem;
   z-index: 100;
   transition: 2s;
+}
+
+@media (max-width: 800px) {
+  footer .upper-footer {
+    flex-direction: column !important;
+  }
+  footer .upper-footer .up {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+  footer .upper-footer .down {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+  }
+}
+@media (max-width: 500px) {
+  footer .upper-footer {
+    flex-direction: column !important;
+  }
+  footer .upper-footer .up {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
+  footer .upper-footer .down {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

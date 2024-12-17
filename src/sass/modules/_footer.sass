@@ -1,9 +1,9 @@
-footer 
+footer      
     .lower-footer 
         background-color: black
     .go-back-button:hover  
         background-color: #CCA855
-        
+
 
 .go-back-button
     position: fixed
@@ -13,3 +13,28 @@ footer
     transition: 2s
 
     
+@media(max-width: 800px)
+    footer 
+        .upper-footer 
+            flex-direction: column!important
+            .up 
+                display: flex
+                flex-direction: row!important
+                justify-content: space-between!important
+            .down 
+                display: flex
+                flex-direction: row!important
+                justify-content: space-between!important
+                    
+@media(max-width: 500px)
+    footer 
+        .upper-footer 
+            flex-direction: column!important
+            .up 
+                display: flex
+                flex-direction: column!important
+                justify-content: space-between!important
+            .down 
+                display: flex
+                flex-direction: column!important
+                justify-content: space-between!important
