@@ -20096,7 +20096,7 @@ body {
 }
 
 nav {
-  opacity: 0.8;
+  opacity: 0.95;
   z-index: 100;
 }
 nav div:first-of-type > a {
@@ -20676,7 +20676,18 @@ footer .go-back-button:hover {
   bottom: 1rem;
   right: 1rem;
   z-index: 100;
-  transition: 2s;
+  transition: 0.5s;
+}
+.go-back-button :before {
+  transition: 0.5s;
+}
+
+.go-back-button:hover {
+  background-color: #CCA855;
+  border-radius: 100%;
+}
+.go-back-button:hover :before {
+  color: black !important;
 }
 
 @media (max-width: 800px) {
