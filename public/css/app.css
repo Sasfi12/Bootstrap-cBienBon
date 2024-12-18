@@ -1,7 +1,9 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @module _variables;
 @module _mixins;
 @module _custom-themes;
+@module _font-family.sass;
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -20072,6 +20074,10 @@ textarea.form-control-lg {
   content: "賈";
 }
 
+@font-face {
+  font-family: "MyFont";
+  src: url("../../fonts/oswalf.ttf") format("ttf");
+}
 * {
   margin: 0;
 }
@@ -20087,12 +20093,24 @@ body {
   padding-top: 3rem;
   padding-bottom: 2.5rem;
 }
+.sect-title div:first-of-type p {
+  color: #9C9C9C;
+}
+.sect-title div:first-of-type div {
+  color: #9C9C9C;
+}
 .sect-title h2, .sect-title .h2 {
   color: #CCA855;
+  font-family: "MyFont";
+  font-weight: bold;
 }
 
 .text-volupt {
   font-size: 100%;
+}
+
+.sassy {
+  font-family: "MyFont";
 }
 
 nav {
@@ -20379,6 +20397,7 @@ header .welcome-message .below-text-buttons button:hover {
 #whyUs .contents .why-card h2:first-child, #whyUs .contents .why-card .h2:first-child {
   color: #CCA855;
   font-weight: bolder;
+  font-family: "MyFont";
 }
 #whyUs .contents .why-card p {
   color: #A9A9A9;
