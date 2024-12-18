@@ -20671,6 +20671,9 @@ header .welcome-message .below-text-buttons button:hover {
   justify-content: center;
   align-items: center;
 }
+#contactUs .contact-info-and-form .locations .info .rounded .bi {
+  font-size: 2rem;
+}
 
 footer .upper-footer {
   padding-bottom: 2rem;
