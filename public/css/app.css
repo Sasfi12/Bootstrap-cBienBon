@@ -20078,10 +20078,6 @@ textarea.form-control-lg {
   font-family: "MyFont";
   src: url("../../fonts/oswalf.ttf") format("ttf");
 }
-* {
-  margin: 0;
-}
-
 body {
   height: 100vh;
   width: 100vw;
@@ -20667,8 +20663,8 @@ header .welcome-message .below-text-buttons button:hover {
   display: block;
   border-radius: 50% !important;
   background: #CCA855 !important;
-  width: 50px !important;
-  height: 50px !important;
+  width: 4rem !important;
+  height: 4rem !important;
   transform: scale(1, 1);
   transition: 1s;
   display: flex;
@@ -20724,6 +20720,16 @@ footer .go-back-button:hover {
 }
 .go-back-button:hover :before {
   color: black !important;
+}
+
+.shrappa {
+  background-color: #2B2A24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
 }
 
 @media (max-width: 800px) {
