@@ -20739,12 +20739,12 @@ footer .go-back-button:hover {
   footer .upper-footer .up {
     display: flex;
     flex-direction: row !important;
-    justify-content: flex-start !important;
+    justify-content: flex-star !important;
   }
   footer .upper-footer .down {
     display: flex;
     flex-direction: row !important;
-    justify-content: flex-start !important;
+    justify-content: flex-end !important;
   }
 }
 @media (max-width: 500px) {
