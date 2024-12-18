@@ -479,27 +479,44 @@
       <h2>Book a Table</h2>
     </div>
 
-    <form class="w-100 d-flex flex-column justify-content-center align-items-center gap-4">
-      <div class="form-row d-flex flex-column gap-4 w-75 justify-content-center">
-        <div class="form-group d-flex flex-row justify-content-between gap-4">
-          <input type="text" class="form-control border-secondary" id="input" placeholder="Your Name">
-          <input type="text" class="form-control border-secondary" id="inputEmail4" placeholder="Your Email">
-          <input type="text" class="form-control border-secondary" id="input" placeholder="Your Phone">
-        </div>
-        <div class="form-group d-flex flex-row justify-content-between gap-4">
-          <input type="text" class="form-control border-secondary" id="input" placeholder="Date">
-          <input type="text" class="form-control border-secondary" id="inputEmail4" placeholder="Time">
-          <input type="text" class="form-control border-secondary" id="input" placeholder="# of people">
-        </div>
-        <div class="form-group d-flex flex-row justify-content-center w-100">
-          <textarea name="message" id="messageInputOne" placeholder="Message"
-            class="w-100 border-secondary message-input ps-2"></textarea>
-        </div>
+    <form class=" d-flex flex-column justify-content-start align-items-center gap-4 ps-5 col-12 pe-5">
+      <div class="form-row d-flex flex-column gap-4 w-100 justify-content-center">
+
+          <div class="lebest form-group d-flex flex-column flex-sm-row justify-content-between gap-3">
+              <input type="text"
+                  class="form-control border-secondary bg-transparent border-primary border-2 opacity-25 rounded-0"
+                  id="input" placeholder="Your Name">
+              <input type="text"
+                  class="form-control border-secondary bg-transparent border-primary border-2 opacity-25 rounded-0"
+                  id="inputEmail4" placeholder="Your Email">
+              <input type="text"
+                  class="form-control border-secondary bg-transparent border-primary border-2 opacity-25 rounded-0"
+                  id="input" placeholder="Your Phone">
+          </div>
+
+          <div class=" lebest form-group d-flex flex-column flex-sm-row justify-content-between gap-3">
+              <input type="text"
+                  class="form-control border-secondary bg-transparent border-primary border-2 opacity-25 rounded-0"
+                  id="input" placeholder="Date">
+              <input type="text"
+                  class="form-control border-secondary bg-transparent border-primary border-2 opacity-25 rounded-0"
+                  id="inputEmail4" placeholder="Time">
+              <input type="text"
+                  class="form-control border-secondary bg-transparent border-primary border-2 opacity-25 rounded-0"
+                  id="input" placeholder="# of people">
+          </div>
+
+          <div class=" lebest form-group d-flex flex-row justify-content-center w-100">
+              <textarea name="message" id="messageInputOne rounded-0" placeholder="Message"
+                  class="w-100 border-secondary message-input ps-2 bg-transparent  border-primary border-2 opacity-25"></textarea>
+          </div>
+
       </div>
+      <!-- fin du form  -->
       <button
-        class="btn bg-primary btn-outline-primary my-2 my-sm-0 text-white rounded-pill ps-4 pt-2 pb-2 pe-4 position-relative ">Book
-        a Table</button>
-    </form>
+          class="btn bg-primary my-2 my-sm-0 text-white rounded-pill ps-4 pt-2 pb-2 pe-4 position-relative btn-survole ">Book
+          a Table</button>
+  </form>
   </section>
   <section id="Gallery">
     <div class=" sect-title">
@@ -509,46 +526,58 @@
       </div>
       <h2>Some photos from our Restaurant </h2>
     </div>
-    <div class="image-div ms-5 me-5  d-flex">
-      <div class=" images d-flex ">
-        <div class="twoimage-container">
-        <div class="image-container d-flex justify-content-center">
-          <img src="public/img/gallery/gallery-1.jpg" alt="tables" class="img-fluid">
-        </div>
-        <div class="image-container d-flex justify-content-center">
-          <img src="public/img/gallery/gallery-2.jpg " class="img-fluid" alt="another-table">
-        </div>
-      </div>
-      <div class="twoimage-container">
-        <div class="image-container d-flex justify-content-center">
-          <img src="public/img/gallery/gallery-3.jpg" class="img-fluid" alt="tables-with-glasses">
-        </div>
-        <div class="image-container d-flex justify-content-center">
-          <img src="public/img/gallery/gallery-4.jpg" class="img-fluid" alt="tables-again">
-        </div>
-      </div>
-      </div>
-      
-        <div class="images d-flex ">
-          <div class="twoimage-container">
-          <div class="image-container d-flex justify-content-center">
-            <img src="public/img/gallery/gallery-5.jpg " class="img-fluid" alt="image">
+    <div class="container-fluid">
+      <div class="row g-0 justify-content-start">
+
+          <div class="col-12 col-sm-4 col-md-3 overflow-hidden">
+              <div class="image-container">
+                  <img class="zoom w-100" src="./public/img/gallery/gallery-1.jpg" alt="">
+              </div>
           </div>
-          <div class="image-container d-flex justify-content-center">
-            <img class="img-fluid" src="public/img/gallery/gallery-6.jpg" alt="image">
+
+          <div class="col-12 col-sm-4 col-md-3 overflow-hidden">
+              <div class="image-container">
+                  <img class="zoom w-100" src="./public/img/gallery/gallery-2.jpg" alt="">
+              </div>
           </div>
-        </div>
-        <div class="twoimage-container">
-          <div class="image-container d-flex justify-content-center">
-            <img class="img-fluid" src="public/img/gallery/gallery-7.jpg" alt="image">
+   
+          <div class="col-12 col-sm-4 col-md-3 overflow-hidden">
+              <div class="image-container">
+                  <img class="zoom w-100" src="./public/img/gallery/gallery-3.jpg" alt="">
+              </div>
           </div>
-          <div class="image-container d-flex justify-content-center">
-            <img class="img-fluid" src="public/img/gallery/gallery-8.jpg" alt="image">
+   
+          <div class="col-12 col-sm-4 col-md-3 overflow-hidden">
+              <div class="image-container">
+                  <img class="zoom w-100" src="./public/img/gallery/gallery-4.jpg" alt="">
+              </div>
           </div>
-        </div>
-        
+   
+          <div class="col-12 col-sm-4 col-md-3 overflow-hidden">
+              <div class="image-container">
+                  <img class="zoom w-100" src="./public/img/gallery/gallery-5.jpg" alt="">
+              </div>
+          </div>
+    
+          <div class="col-12 col-sm-4 col-md-3 overflow-hidden">
+              <div class="image-container">
+                  <img class="zoom w-100" src="./public/img/gallery/gallery-6.jpg" alt="">
+              </div>
+          </div>
+          <!-- Septième image -->
+          <div class="col-12 col-sm-4 col-md-3 overflow-hidden">
+              <div class="image-container">
+                  <img class="zoom w-100" src="./public/img/gallery/gallery-7.jpg" alt="">
+              </div>
+          </div>
+          <!-- Huitième image -->
+          <div class="col-12 col-sm-4 col-md-3 overflow-hidden">
+              <div class="image-container">
+                  <img class="zoom w-100" src="./public/img/gallery/gallery-8.jpg" alt="">
+              </div>
+          </div>
       </div>
-    </div>
+</div>
   </section>
   <section id="Chefs">
     <div class=" sect-title ">

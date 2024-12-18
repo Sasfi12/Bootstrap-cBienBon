@@ -20567,11 +20567,15 @@ header .welcome-message .below-text-buttons button:hover {
     flex-direction: column !important;
   }
 }
-#Gallery .image-div .images .twoimage-container .image-container {
+.lebest:placeholder {
+  color: #a09b86;
+}
+
+#Gallery .image-div .image-container {
   width: 100%;
   overflow: hidden;
 }
-#Gallery .image-div .images .twoimage-container .image-container img {
+#Gallery .image-div .image-container img {
   height: 100%;
   width: 100%;
   border: solid 3px #464337;
@@ -20580,8 +20584,17 @@ header .welcome-message .below-text-buttons button:hover {
   transition: 2s;
   object-fit: 120%;
 }
-#Gallery .image-div .images .twoimage-container .image-container img:hover {
+#Gallery .image-div .image-container img:hover {
   transform: scale(1.2, 1.2);
+}
+
+.zoom {
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 500px) {

@@ -1,7 +1,5 @@
 #Gallery  
     .image-div
-        .images
-            .twoimage-container
                 //overflow sur cette div  
                 .image-container
                     width: 100%
@@ -16,6 +14,13 @@
                         object-fit: 120%
                     img:hover 
                         transform: scale(1.2 , 1.2)
+
+
+.zoom
+    transition: transform 0.3s ease
+    width: 100%
+.zoom:hover
+    transform: scale(1.1)
 
 @media (max-width: 500px)
     #Gallery
