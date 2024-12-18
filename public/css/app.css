@@ -20644,6 +20644,18 @@ header .welcome-message .below-text-buttons button:hover {
   display: flex;
   justify-content: space-evenly;
 }
+#contactUs .contact-info-and-form .locations .info .rounded {
+  display: block;
+  border-radius: 50% !important;
+  background: #CCA855 !important;
+  width: 50px !important;
+  height: 50px !important;
+  transform: scale(1, 1);
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 footer .upper-footer {
   padding-bottom: 2rem;
@@ -20677,6 +20689,12 @@ footer .go-back-button:hover {
   right: 1rem;
   z-index: 100;
   transition: 0.5s;
+  border-radius: 100%;
+  width: 39px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .go-back-button :before {
   transition: 0.5s;
@@ -20684,7 +20702,6 @@ footer .go-back-button:hover {
 
 .go-back-button:hover {
   background-color: #CCA855;
-  border-radius: 100%;
 }
 .go-back-button:hover :before {
   color: black !important;
