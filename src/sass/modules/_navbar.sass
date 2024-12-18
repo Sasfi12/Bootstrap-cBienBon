@@ -1,12 +1,15 @@
 nav 
     opacity: 0.95
     z-index: 100
+    justify-content: center!important
     div:first-of-type > a
         font-size: 2.5rem
     .collapse 
         padding: 1rem 
         color: white !important
+        justify-content: space-evenly!important
     .collapse > ul
+        justify-content: center
         gap: 0.5rem
     .collapse > ul  > li > a 
         font-size: 1.2rem
@@ -14,14 +17,19 @@ nav
         transition: 0.5
     .collapse > ul  > li > a:hover  
         color: #CCA855  
-@media (max-width: 1250px)
-    nav
+    .collapse > .btn 
+        height: 3rem
+        width: 15%
+        transform: scale(0.5 , 0.5)
+        
+@media (max-width:  1150px )
+    nav 
         .collapse > ul  > li > a 
-            font-size: 0.9rem
+            font-size: 0.8rem
             color: white
-            transition: 0.5 
-@media (max-width: 900px)
-    nav
-        justify-content: space-between!important
-        .btn-outline-primary 
-            display: none
+            transition: 0.5
+        .collapse > .btn 
+            height: 3rem
+            width: 40%
+            transform: scale(0.25 , 0.25)!important
+        

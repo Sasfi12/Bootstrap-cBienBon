@@ -20112,6 +20112,7 @@ body {
 nav {
   opacity: 0.95;
   z-index: 100;
+  justify-content: center !important;
 }
 nav div:first-of-type > a {
   font-size: 2.5rem;
@@ -20119,8 +20120,10 @@ nav div:first-of-type > a {
 nav .collapse {
   padding: 1rem;
   color: white !important;
+  justify-content: space-evenly !important;
 }
 nav .collapse > ul {
+  justify-content: center;
   gap: 0.5rem;
 }
 nav .collapse > ul > li > a {
@@ -20131,20 +20134,22 @@ nav .collapse > ul > li > a {
 nav .collapse > ul > li > a:hover {
   color: #CCA855;
 }
+nav .collapse > .btn {
+  height: 3rem;
+  width: 15%;
+  transform: scale(0.5, 0.5);
+}
 
-@media (max-width: 1250px) {
+@media (max-width: 1150px) {
   nav .collapse > ul > li > a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: white;
     transition: 0.5;
   }
-}
-@media (max-width: 900px) {
-  nav {
-    justify-content: space-between !important;
-  }
-  nav .btn-outline-primary {
-    display: none;
+  nav .collapse > .btn {
+    height: 3rem;
+    width: 40%;
+    transform: scale(0.25, 0.25) !important;
   }
 }
 header {
