@@ -11,5 +11,14 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sasfi12/Bootstrap-cBienBon.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Sasfi12/Bootstrap-cBienBon/issues"
+  },
+  "homepage": "https://github.com/Sasfi12/Bootstrap-cBienBon#readme"
 }
