@@ -20754,6 +20754,11 @@ footer .go-back-button:hover {
   border-radius: 100%;
 }
 
+.newletter {
+  margin: 0 !important;
+  height: 100% !important;
+}
+
 @media (max-width: 800px) {
   footer .upper-footer {
     flex-direction: column !important;
@@ -20761,7 +20766,7 @@ footer .go-back-button:hover {
   footer .upper-footer .up {
     display: flex;
     flex-direction: row !important;
-    justify-content: flex-star !important;
+    justify-content: flex-start !important;
   }
   footer .upper-footer .down {
     display: flex;
